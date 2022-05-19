@@ -1,0 +1,22 @@
+.advantages-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.advantages-section__second{
+    background-color: #F2F2F2;
+}
+
+.advantages-text__img-container{
+    width: 50%
+}
+
+.advantages-section__img{
+    width: 23.5rem;
+    height: 543px;
+    object-fit: cover;
+    object-position: 100% 0;
+    transform: translateY(6px);
+}

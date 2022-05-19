@@ -1,0 +1,31 @@
+
+.testimonials-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}  
+
+.testimonials-section__testimonials_cards{
+    margin-top: 41px;
+    display: flex;
+    gap: 16px
+}
+
+.testimonials-section__testimonials_cards__card-item{
+    display: flex;
+    background-color: #fff;
+    border-radius:20px;
+    width: 23.688rem;
+    height: 14rem;
+    flex-direction: column;
+    padding:30px;
+    text-align: left;
+    color:#222;
+}
+
+.card-item__testimonial{
+    margin-bottom: 22px;
+}

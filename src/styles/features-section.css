@@ -1,0 +1,83 @@
+.features-section{
+    background-color: #222;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.25rem 8.5rem;
+}
+
+.features-section__features-container{    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.feature-card{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+    border-radius:20px;
+    width: 23.688rem;
+    height: 30.625rem;
+    flex-direction: column;
+    padding-top:39px;
+}
+
+.feature-card__img{
+    width: 227px;
+    height: 253px; 
+    object-fit: cover;
+    object-position: 100% 0;
+    transform: translateY(6px);
+}
+
+.feature-card__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 33px 47px;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.feature-card__info__title{
+    font-size: 24px;
+    font-weight: 300;
+}
+.feature-card__info__title__calendar-view{
+    color:#0278ED;
+}
+.feature-card__info__title__lists{
+    color: #FF5437;
+}
+.feature-card__info__title__varied-type{
+    color: #FF9209;
+}
+.feature-card__info__title__split-screen{
+    color: #E738CE;
+}
+.feature-card__info__title__uploads{
+    color: #00C6DF;
+}
+.feature-card__info__title__focus-mode{
+    color: #B25DF8;
+}
+
+.feature-card__info__heading{
+    color:#222;
+    font-weight: 400;
+    line-height: 22.54px;
+
+}
+
+.feature-card__info__icon{
+    position: absolute;
+    top: -35px;
+    z-index: 50
+}

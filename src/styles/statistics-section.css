@@ -1,0 +1,23 @@
+.statistics-section{
+    background-color:#FF5437;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.statistics-section__item{
+    text-align: center;
+}
+
+.statistics-number{
+    font-size: 96px;
+    font-weight:400;
+}
+
+.statisctics-caption{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+}
