@@ -48,14 +48,13 @@ section{
     display: flex;
     gap:2.625rem;
     list-style: none;
+}
+
+.navbar__links__link-item{
+    
     color: #666;
     font-size: 15px;
 }
-
-/* .navbar__links{
-    font-size: 15px;
-    color:#666;
-} */
 
 .navbar__button{
     padding: 10px 31px;
@@ -120,6 +119,7 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 138px 214px 0 214px; /* change to rem */
+    position: relative;
 }
 
 .main-section__text{
@@ -167,6 +167,10 @@ section{
     width: 23.5rem;
     height: 34.25rem;
     transform: translateY(7px);
+    position: absolute;
+    right: 282px;
+    top: 183px;
+    z-index: -1;
 }
 
 .section-text__section-paragraph{
