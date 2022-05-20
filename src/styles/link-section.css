@@ -7,3 +7,15 @@
     text-align: center;
     background: #fff;
 }  
+
+.section-text__section-btn{
+    cursor: pointer;
+}
+
+.section-text__section-btn:active{
+    transform: scale(0.98);
+}
+
+.section-text__section-btn:focus{
+    outline: 2px solid #5AB0FF
+}

@@ -15,6 +15,7 @@
 .pricing-section__pricing_cards{
     display: flex;
     gap:16px;
+    flex-wrap: wrap;
 }
 
 .pricing-section__pricing_cards__card-item{
@@ -22,10 +23,15 @@
     align-items:center;
     background-color: #F2F2F2;
     border-radius:20px;
-    width: 23.688rem;
+    width: 22.688rem;
     height: 21.125rem;
     flex-direction: column;
     padding:49px 0;
+    cursor: pointer;
+}
+
+.pricing-section__pricing_cards__card-item:hover{
+    
 }
 
 .card-item__plan-type{

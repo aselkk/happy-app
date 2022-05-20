@@ -25,7 +25,7 @@
         
         <a href="#"><img src="/src/assets/img/logo-header.svg" alt="header-logo"></a>
 
-        <!-- <div class="menu-bar"><img src="/src/assets/img/burger-menu.png" alt=""></div> -->
+        <div class="menu-bar"><img src="/src/assets/img/burger-menu.png" alt=""></div>
 
         <nav class="navbar">
             
@@ -36,8 +36,59 @@
                 <li><a class="navbar__links__link-item" href="#faq">FAQ</a></li>
             </ul>
 
-            <button class="navbar__button">get this app</button>
+            <button class="navbar__button open-modal" data-target="modal-window">get this app</button>
         </nav>
+
+        <div id="modal-window" class="modal-window">
+            <form class="modal-form">
+                <h2 class="modal-header">Leave a request for the purchase of goods</h2>
+                <input class="modal-input" type="text" placeholder="Enter your name" required>
+                <input class="modal-input" type="email" placeholder="Enter your email" required>
+                <p class="modal-text">Your plan?</p>
+                <div class="modal-window__radio-wrapper">
+                    <input type="radio" name="select" id="option-1" >
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3" checked>
+                    <label for="option-1" class="option option-1">
+                        <img class="options__check-icon"  src="/src/assets/img/check-icon.svg" alt="check-icon">
+                        <span class='option__standart'>Standart</span>
+                    </label>
+                    <label for="option-2" class="option option-2">
+                        <img class="options__check-icon" src="/src/assets/img/check-icon.svg" alt="check-icon">
+                        <span class="option__premium">Premium</span>
+                    </label>
+                    <label for="option-3" class="option option-3">
+                        <img class="options__check-icon" src="/src/assets/img/check-icon.svg" alt="check-icon">
+                        <span class="option__lifetime">Lifetime</span>
+                    </label>
+                </div>
+                <p class="modal-text">How did you know about our app?</p>
+                <div class="modal-window__checkbox-wrapper">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" value="value-1">
+                        <span>Facebook</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" value="value-2">
+                        <span>Instagram</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" value="value-3">
+                        <span>Youtube</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" value="value-4">
+                        <span>Other</span>
+                    </label>
+                </div>
+                <button class="modal-btn modal-hide">send</button>
+                <div class="modal-window__loading-text">
+                    <img class="loading-text__loading-icon" src="../src/assets/img/loading-icon.svg" alt="">
+                    loading...  
+                </div>
+            </div>
+            </form>
+        <div class="modal-fader"></div>
 
     </header>
 
@@ -47,10 +98,10 @@
             <h3 class="countdown-section__header-bottom">there is very little left</h3>
     </section>
 
-    <!-- main section -->
+    <!-- hero section -->
     <section class="hero-section">
         <div class="hero-section__text">
-            <a href="#"><img src="/src/assets/img/logo-middle.svg" alt="logo"></a>
+            <a class="hero-section__logo" href="#"><img src="/src/assets/img/logo-middle.svg" alt="logo"></a>
             <h1 class="hero-section__text__header">
                 The future of digital photos.
             </h1>
@@ -66,8 +117,8 @@
                 </button>
             </div>
         </div>  
-        <div class="main-section__img-container">
-            <img class="section__img" src="/src/assets/img/main-img.svg" alt="logo">
+        <div class="hero-section__img-container">
+            <img class="hero-section__img" src="/src/assets/img/main-img.svg" alt="logo">
         </div>
     </section>
 
@@ -169,7 +220,7 @@
 
     <!-- advantages section -->
     <section class="advantages-section">
-        <div class="main-section__text">
+        <div class="hero-section__text">
             <h2 class="section-text__section-title">technology</h2>
             <h3 class="section-text__section-heading section-text__section-heading__advantages">Use H(app)y to give your digital photos some pop.</h3>
             <p class="section-text__section-paragraph__advantages">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
@@ -183,7 +234,7 @@
         <div class="advantages-text__img-container">
             <img class="advantages-section__img" src="/src/assets/img/main-img.svg" alt="advantage image">
         </div>
-        <div class="main-section__text">
+        <div class="hero-section__text">
             <h2 class="section-text__section-title">Speed & security</h2>
             <h3 class="section-text__section-heading section-text__section-heading__advantages">State-of-the-art processing capabilities.</h3>
             <p class="section-text__section-paragraph__advantages">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
@@ -206,7 +257,7 @@
         <div class="darkmode-section__toggle-bttns">
             <div class="darkmode-section__btn-container">
                     <img class="darkmode-section__toggle-bttns__btn-container__btn darkmode-section__toggle-bttns__btn-container__btn-off" src="/src/assets/img/light-mode-off.svg" alt="light mode">
-                <p class="darkmode-section__toggle-bttns__btn-container__text darkmode-section__toggle-bttns__text__off">light mode</p>
+                    <p class="darkmode-section__toggle-bttns__btn-container__text darkmode-section__toggle-bttns__text__off">light mode</p>
             </div>
             
             <div class="darkmode-section__btn-container"> 
@@ -219,7 +270,7 @@
 
 
     <!-- pricing section -->
-    <section class="pricing-section">
+    <section id="pricing" class="pricing-section">
         <div class="pricing-section__section-text">
             <h2 class="section-text__section-title">Pricing</h2>
             <h3 class="section-text__section-heading">A plan for every need.</h3>
@@ -250,7 +301,7 @@
     </section>
 
     <!-- testimonials section -->
-    <section class="testimonials-section">
+    <section id="testimonials" class="testimonials-section">
         <div class="testimonials-section__section-text">
             <h2 class="section-text__section-title">Testimonials</h2>
             <h3 class="section-text__section-heading">Don't take our word for it.</h3>
@@ -282,13 +333,13 @@
             <h2 class="section-text__section-title">Download</h2>
             <h3 class="section-text__section-heading">It's available right now!</h3>
             <p class="section-text__section-paragraph">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-            <button class="section-text__section-btn"><img src="/src/assets/img/download-btn.svg" alt="button image"></button>
+            <img class="section-text__section-btn" src="/src/assets/img/download-btn.svg" alt="button image">
         </div>
     </section>
 
 
-    <!-- link section -->
-    <section class="faq-section">
+    <!-- faq section -->
+    <section id="faq" class="faq-section">
 
         <div class="faq-section__section-text">
             <h3 class="section-text__section-heading">FAQ</h3>
@@ -334,6 +385,6 @@
             </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

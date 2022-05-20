@@ -11,6 +11,8 @@
 .testimonials-section__testimonials_cards{
     margin-top: 41px;
     display: flex;
+    flex-wrap: wrap;
+
     gap: 16px
 }
 
@@ -18,7 +20,7 @@
     display: flex;
     background-color: #fff;
     border-radius:20px;
-    width: 23.688rem;
+    width: 22.688rem;
     height: 14rem;
     flex-direction: column;
     padding:30px;
