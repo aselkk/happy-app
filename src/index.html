@@ -42,9 +42,9 @@
         <div id="modal-window" class="modal-window">
             <form class="modal-form">
                 <h2 class="modal-header">Leave a request for the purchase of goods</h2>
-                <input class="modal-input" type="text" placeholder="Enter your name" required>
-                <input class="modal-input" type="email" placeholder="Enter your email" required>
-                <p class="modal-text">Your plan?</p>
+                <input class="modal-input" type="text" placeholder="name" required>
+                <input class="modal-input" type="email" placeholder="email" required>
+                <p class="modal-text modal-text__plan">Your plan?</p>
                 <div class="modal-window__radio-wrapper">
                     <input type="radio" name="select" id="option-1" >
                     <input type="radio" name="select" id="option-2">
@@ -62,7 +62,7 @@
                         <span class="option__lifetime">Lifetime</span>
                     </label>
                 </div>
-                <p class="modal-text">How did you know about our app?</p>
+                <p class="modal-text modal-text__sm">How did you know about our app?</p>
                 <div class="modal-window__checkbox-wrapper">
                     <label class="custom-checkbox">
                         <input type="checkbox" value="value-1">
@@ -109,7 +109,7 @@
                 The H(app)y app is the latest & greatest in phone photography. It's available in the App Store right now. Go check it out!
             </p>
             <div class='hero-section__bttns'>
-                <button class=" hero-section__bttns__btn hero-section__bttns__btn__left">
+                <button class=" hero-section__bttns__btn hero-section__bttns__btn__left open-modal" data-target="modal-window">
                     buy now
                 </button>
                 <button class="hero-section__bttns__btn">
@@ -243,15 +243,15 @@
 
     
     <!-- darkmode section -->
-    <section class="darkmode-section">
+    <section class="darkmode-section" id="123">
 
-        <div class="section-text">
-            <h2 class="section-text__section-title">dark mode</h2>
-            <h3 class="section-text__section-heading">Also available in <span class="section-text__section-heading__span">dark</span></h3>
+        <div class="section-text" id="123">
+            <h2 class="section-text__section-title section-text__section-title__darkmode">dark mode</h2>
+            <h3 class="section-text__section-heading section-text__section-heading__darkmode" >Also available in <span class="section-text__section-heading__span">dark</span></h3>
             <p class="section-text__section-paragraph section-text__section-paragraph__darkmode">Don't get blinded when using the H(app)y app at night, just turn off the lights. Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <img class="darkmode-section__img" src="/src/assets/img/dark-mode-img.svg" alt="dark mode image">
+            <img class="darkmode-section__img" src="/src/assets/img/dark-mode-img.svg" alt="dark mode image">
         <div class="darkmode-section__line"></div>
         
         <div class="darkmode-section__toggle-bttns">
@@ -279,22 +279,22 @@
         <div class="pricing-section__pricing_cards">
 
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__standart">
-                <h3 class="card-item__plan-type card-item__plan-type__standart">Standart</h3>
-                <p  class="card-item__price card-item__price__standart">$9</p>
-                <p  class="card-item__payment card-item__payment__standart">monthly</p>
-                <button class="card-item__btn card-item__btn__standart">buy now</button>
+                    <h3 class="card-item__plan-type card-item__plan-type__standart">Standart</h3>
+                    <p  class="card-item__price card-item__price__standart">$9</p>
+                    <p  class="card-item__payment card-item__payment__standart">monthly</p>
+                    <button class="card-item__btn card-item__btn__standart open-modal" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item">
                 <h3 class="card-item__plan-type card-item__plan-type__standart">Standart</h3>
                 <p  class="card-item__price card-item__price__standart">$9</p>
                 <p  class="card-item__payment card-item__payment__standart">monthly</p>
-                <button class="card-item__btn card-item__btn__standart">buy now</button>
+                <button class="card-item__btn card-item__btn__standart open-modal" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item">
                 <h3 class="card-item__plan-type card-item__plan-type__standart">Standart</h3>
                 <p  class="card-item__price card-item__price__standart">$9</p>
                 <p  class="card-item__payment card-item__payment__standart">monthly</p>
-                <button class="card-item__btn card-item__btn__standart">buy now</button>
+                <button class="card-item__btn card-item__btn__standart open-modal" data-target="modal-window">buy now</button>
             </div>
         </div>
 
@@ -385,6 +385,7 @@
             </div>
     </footer>
 
+    <script src="../src/js/darkmode-section.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

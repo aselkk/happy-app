@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -66,9 +66,6 @@ section{
     font-weight: 300;
 }
 
-.section-text__section-paragraph__darkmode{
-    color: #fff;
-}
 
 .section-text__section-btn{
     border:none;
@@ -105,7 +102,7 @@ section{
     z-index: 99999;
     background: #fff;
     font-family: sans-serif;
-    top: 100%;
+    top: 70%;
     width: 436px;
     height: 686px;
 }
@@ -117,7 +114,7 @@ section{
     height: 100%;
 
     margin: 0;
-    padding: 38px;
+    padding: 30px;
 }
 
 .modal-window.active {
@@ -126,14 +123,7 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-.modal-window h1,
-.modal-window h2,
-.modal-window h3,
-.modal-window h4,
-.modal-window h5,
-.modal-window h6 {
-    margin: 0;
-}
+
 .modal-btn {
     border: none;
     color: #fff;
@@ -147,18 +137,21 @@ section{
     width: 42%;
     height: 6.4%;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .modal-header{
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     width: 75%;
+    margin-bottom: 27px;
+
 }
 
 .modal-input{
-    width: 90%;
-    height: 7.1%;
+    width: 83%;
+    height: 6.5%;
     border:none;
     background-color: #F2F2F2;
     padding: 0 7px;
@@ -182,7 +175,7 @@ section{
 .modal-window__radio-wrapper .option{
     background: #fff;
     height: 35px;
-    width: 94%;
+    width: 85.6%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,6 +206,15 @@ section{
     transform: scale(1.5);
     transition: all 0.3s ease;
 }
+
+.modal-text__plan{
+    margin-top:14px;
+}
+
+.modal-text__sm{
+    margin: 25px 0 7px 0;
+}
+
 input[type="radio"]{
     display: none;
 }
@@ -280,6 +282,7 @@ input[type="radio"]{
 .modal-window__checkbox-wrapper{
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .checkbox {
