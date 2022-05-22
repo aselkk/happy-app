@@ -4,7 +4,7 @@
 		{ "name": "premium", "price": 99, "payment":"annualy" },
 		{ "name": "lifetime", "price": 149, "payment":"up front" }
 	],
-	"timerEndDate": "01.07.2022 11:00",
+	"timerEndDate": "May 21, 2022 18:22:00",
 	"testimonials": [
 		{ 
 			"name": "Pam Beesly", 

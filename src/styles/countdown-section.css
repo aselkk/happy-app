@@ -21,3 +21,32 @@
     font-size: 30px;
     font-weight: 700;
 }
+
+.dividor{
+    height: 86px;
+    width: 8px;
+    background-color:#fff;
+    transform: translateY(-19px);
+}
+
+.countdown-nums{
+    font-size:100px;
+    font-weight: 300;
+    width: 97px;
+}
+
+.countdown-section__countdown-container{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-text{
+    font-size: 24px;
+    font-weight:600;
+}
+
+.close-countdown-section{
+    display: none;
+}

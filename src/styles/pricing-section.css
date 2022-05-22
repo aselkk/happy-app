@@ -17,6 +17,7 @@
     display: flex;
     gap:16px;
     flex-wrap: wrap;
+    text-transform: capitalize;
 }
 
 .pricing-section__pricing_cards__card-item{
@@ -71,6 +72,20 @@
     color: #0278ED;
 }
 
+.pricing-section__pricing_cards__card-item__premium{
+    color: #FF5437;
+}    
+
+.pricing-section__pricing_cards__card-item__lifetime{
+    color: #FF9209;
+}    
+
 .card-item__btn__standart{
-    background: #0278ED;
+    background-color: #0278ED;
+}
+.card-item__btn__premium{
+    background-color: #FF5437;
+}
+.card-item__btn__lifetime{
+    background-color: #FF9209;
 }
