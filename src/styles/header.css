@@ -5,13 +5,12 @@
     left: 0;
     right: 0;
     z-index: 99;
-    padding: 1.563rem 9.5rem; /* or maybe height in percentage? */
+    padding: 1.563rem 9.5rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     background-color: #fff;
-    -webkit-box-shadow: 0px 5px 14px 5px rgba(0,0,0,0.15); 
     box-shadow: 0px 5px 14px 5px rgba(0,0,0,0.15);
 }
 
