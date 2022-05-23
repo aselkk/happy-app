@@ -1,5 +1,5 @@
 async function getPlans() {
-    const response = await fetch('../config.json');
+    const response = await fetch('../src/data/config.json');
     const plans = await response.json();
     const [ standart, premium, lifetime ] = plans.plans;
 

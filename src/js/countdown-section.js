@@ -1,7 +1,7 @@
 const section = document.querySelector('.countdown-section')
 
 async function getCountdown() {
-    const response = await fetch('../config.json');
+    const response = await fetch('../src/data/config.json');
     const countdown = await response.json();
     const date = new Date(countdown.timerEndDate)
     const currentDate = new Date().getTime()
