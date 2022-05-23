@@ -1,12 +1,12 @@
 (function () {
-    document.querySelectorAll(".open-modal").forEach(function (trigger) {
+    document.querySelectorAll(".open-modal-btn").forEach(function (trigger) {
         trigger.addEventListener("click", function () {
             hideAllModalWindows();
             showModalWindow(this);
         });
     });
-    
-    document.querySelectorAll(".modal-hide").forEach(function (closeBtn) {
+
+    document.querySelectorAll(".modal-hide-btn").forEach(function (closeBtn) {
         closeBtn.addEventListener("click", function () {
             hideAllModalWindows();
         });

@@ -24,7 +24,7 @@
 
 .dividor{
     height: 86px;
-    width: 8px;
+    width: 7px;
     background-color:#fff;
     transform: translateY(-19px);
 }
@@ -32,12 +32,12 @@
 .countdown-nums{
     font-size:100px;
     font-weight: 300;
-    width: 97px;
+    width: 120px;
 }
 
 .countdown-section__countdown-container{
     display: flex;
-    gap:40px;
+    gap:25px;
     align-items: center;
     justify-content: center;
 }

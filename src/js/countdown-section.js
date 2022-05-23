@@ -17,15 +17,16 @@ async function getCountdown() {
     const textMinute = Math.floor((gap % hour) / minute)
     const textSecond = Math.floor((gap % minute) / second)
 
-    function addZero(n){
-        return (n < 10 ? "0" : "") + n;
+    function padZero(n) {
+        return String(n).padStart(2, '0')
     }
-    document.querySelector('.countdown-nums__days').innerText = addZero(textDay)
-    document.querySelector('.countdown-nums__hours').innerText = addZero(textHour)
-    document.querySelector('.countdown-nums__minutes').innerText = addZero(textMinute)
-    document.querySelector('.countdown-nums__seconds').innerText = addZero(textSecond)
 
-    if(textSecond < 0) {
+    document.querySelector('.countdown-nums__days').innerText = padZero(textDay)
+    document.querySelector('.countdown-nums__hours').innerText = padZero(textHour)
+    document.querySelector('.countdown-nums__minutes').innerText = padZero(textMinute)
+    document.querySelector('.countdown-nums__seconds').innerText = padZero(textSecond)
+
+    if(gap < 10000) {
         document.getElementById('countdown-section').style.display = "none";
     }
 }
