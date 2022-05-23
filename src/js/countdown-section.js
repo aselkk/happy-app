@@ -17,13 +17,13 @@ async function getCountdown() {
     const textMinute = Math.floor((gap % hour) / minute)
     const textSecond = Math.floor((gap % minute) / second)
 
-    function makeMeTwoDigits(n){
+    function addZero(n){
         return (n < 10 ? "0" : "") + n;
     }
-    document.querySelector('.countdown-nums__days').innerText = makeMeTwoDigits(textDay)
-    document.querySelector('.countdown-nums__hours').innerText = makeMeTwoDigits(textHour)
-    document.querySelector('.countdown-nums__minutes').innerText = makeMeTwoDigits(textMinute)
-    document.querySelector('.countdown-nums__seconds').innerText = makeMeTwoDigits(textSecond)
+    document.querySelector('.countdown-nums__days').innerText = addZero(textDay)
+    document.querySelector('.countdown-nums__hours').innerText = addZero(textHour)
+    document.querySelector('.countdown-nums__minutes').innerText = addZero(textMinute)
+    document.querySelector('.countdown-nums__seconds').innerText = addZero(textSecond)
 
     if(textSecond < 0) {
         document.getElementById('countdown-section').style.display = "none";

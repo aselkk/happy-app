@@ -36,7 +36,7 @@
                 <li><a class="navbar__links__link-item" href="#faq">FAQ</a></li>
             </ul>
 
-            <button class="navbar__button open-modal" data-target="modal-window">get this app</button>
+            <a href="#link"><button class="navbar__button">get this app</button></a>
         </nav>
 
         <div id="modal-window" class="modal-window">
@@ -46,18 +46,18 @@
                 <input class="modal-input" type="email" placeholder="email" required>
                 <p class="modal-text modal-text__plan">Your plan?</p>
                 <div class="modal-window__radio-wrapper">
-                    <input type="radio" name="select" id="option-1" >
-                    <input type="radio" name="select" id="option-2">
-                    <input type="radio" name="select" id="option-3" checked>
-                    <label for="option-1" class="option option-1">
+                    <input type="radio" name="select" id="option-standart" >
+                    <input type="radio" name="select" id="option-premium">
+                    <input type="radio" name="select" id="option-lifetime" checked>
+                    <label for="option-standart" class="option option-1">
                         <img class="options__check-icon"  src="/src/assets/img/check-icon.svg" alt="check-icon">
                         <span class='option__standart'>Standart</span>
                     </label>
-                    <label for="option-2" class="option option-2">
+                    <label for="option-premium" class="option option-2">
                         <img class="options__check-icon" src="/src/assets/img/check-icon.svg" alt="check-icon">
                         <span class="option__premium">Premium</span>
                     </label>
-                    <label for="option-3" class="option option-3">
+                    <label for="option-lifetime" class="option option-3">
                         <img class="options__check-icon" src="/src/assets/img/check-icon.svg" alt="check-icon">
                         <span class="option__lifetime">Lifetime</span>
                     </label>
@@ -81,7 +81,7 @@
                         <span>Other</span>
                     </label>
                 </div>
-                <button class="modal-btn modal-hide">send</button>
+                <button  class="modal-btn modal-hide">send</button>
                 <div class="modal-window__loading-text">
                     <img class="loading-text__loading-icon" src="../src/assets/img/loading-icon.svg" alt="">
                     loading...  
@@ -305,19 +305,19 @@
                     <h3 class="card-item__plan-type card-item__plan-type__standart"></h3>
                     <p  class="card-item__price card-item__price__standart"></p>
                     <p  class="card-item__payment card-item__payment__standart"></p>
-                    <button class="card-item__btn card-item__btn__standart open-modal" data-target="modal-window">buy now</button>
+                    <button id='standart' class="card-item__btn card-item__btn__standart open-modal" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__premium">
                 <h3 class="card-item__plan-type card-item__plan-type__premium"></h3>
                 <p  class="card-item__price card-item__price__premium"></p>
                 <p  class="card-item__payment card-item__payment__premium"></p>
-                <button class="card-item__btn card-item__btn__premium open-modal" data-target="modal-window">buy now</button>
+                <button id='premium' class="card-item__btn card-item__btn__premium open-modal" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__lifetime">
                 <h3 class="card-item__plan-type card-item__plan-type__lifetime"></h3>
                 <p  class="card-item__price card-item__price__lifetime"></p>
                 <p  class="card-item__payment card-item__payment__lifetime"></p>
-                <button class="card-item__btn card-item__btn__lifetime open-modal" data-target="modal-window">buy now</button>
+                <button id='lifetime' class="card-item__btn card-item__btn__lifetime open-modal" data-target="modal-window">buy now</button>
             </div>
         </div>
 
@@ -351,7 +351,7 @@
 
 
     <!-- link section -->
-    <section class="link-section">
+    <section id="link" class="link-section">
         <div class="link-section__section-text">
             <h2 class="section-text__section-title">Download</h2>
             <h3 class="section-text__section-heading">It's available right now!</h3>
@@ -411,6 +411,7 @@
     <script src="../src/js/darkmode-section.js"></script>
     <script src="../src/js/countdown-section.js"></script>
     <script src="../src/js/pricing-section.js"></script>
+    <script src="../src/js/modal-window.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

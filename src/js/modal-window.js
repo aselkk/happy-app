@@ -17,14 +17,16 @@
     });
 })();
 function showModalWindow (buttonEl) {
-    var modalTarget = "#" + buttonEl.getAttribute("data-target");
+    let modalTarget = "#" + buttonEl.getAttribute("data-target");
     
     document.querySelector(".modal-fader").className += " active";
     document.querySelector(modalTarget).className += " active";
+
+    document.getElementById(`option-${buttonEl.id}`).checked = true;
 }
 function hideAllModalWindows () {
-    var modalFader = document.querySelector(".modal-fader");
-    var modalWindows = document.querySelectorAll(".modal-window");
+    let modalFader = document.querySelector(".modal-fader");
+    let modalWindows = document.querySelectorAll(".modal-window");
     
     if(modalFader.className.indexOf("active") !== -1) {
         modalFader.className = modalFader.className.replace("active", "");

@@ -83,9 +83,23 @@
 .card-item__btn__standart{
     background-color: #0278ED;
 }
+
+.card-item__btn__standart:hover{
+    background-color: #0278edbd;
+}
+
 .card-item__btn__premium{
     background-color: #FF5437;
 }
+
+.card-item__btn__premium:hover{
+    background-color: #ff5437cc;
+}
+
 .card-item__btn__lifetime{
     background-color: #FF9209;
+}
+
+.card-item__btn__lifetime:hover{
+    background-color: #ff9209c9;
 }
