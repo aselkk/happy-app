@@ -22,8 +22,8 @@
     background: #fff;
     font-family: sans-serif;
     top: 70%;
-    width: 436px;
-    height: 686px;
+    width: 506px;
+    height: 805px;
 }
 .modal-form{
     display: flex;
@@ -31,7 +31,7 @@
     align-items:center;
     flex-direction:column;
     height: 100%;
-
+    position: relative;
     margin: 0;
     padding: 30px;
 }
@@ -53,34 +53,44 @@
     letter-spacing: 2px;
     font-size: 13px;
     text-transform: uppercase;
-    width: 42%;
-    height: 6.4%;
+    width: 44%;
+    height: 6%;
     cursor: pointer;
     margin-top: 20px;
 }
 
 .modal-header{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     width: 75%;
-    margin-bottom: 27px;
+    margin-bottom: 42px;
 
 }
 
 .modal-input{
-    width: 83%;
-    height: 6.5%;
+    width: 78%;
+    height: 5.5%;
     border:none;
     background-color: #F2F2F2;
-    padding: 0 7px;
+    padding: 0 9px;
+    margin-bottom: 17px;
 }
+
 .modal-input::placeholder{
     font-weight: 400;
 }
 
 .modal-text{
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.modal-exit-btn{
+    position: absolute;
+    border: none;
+    background: none;
+    right: 27px;
+    cursor:pointer;
 }
 
 .modal-window__radio-wrapper {
@@ -89,19 +99,19 @@
     justify-content: center;
     flex-direction:column;
     width: 96.2%;
-    gap:8px;
+    gap:11px;
 }
 .modal-window__radio-wrapper .option{
     background: #fff;
-    height: 35px;
-    width: 85.6%;
+    height: 39px;
+    width: 80.6%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
     /* border-radius: 5px; */
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0 15px;
     border: 2px solid lightgrey;
     transition: all 0.3s ease;
 }
@@ -127,11 +137,11 @@
 }
 
 .modal-text__plan{
-    margin-top:14px;
+    margin: 6px 0 11px 0;
 }
 
 .modal-text__sm{
-    margin: 25px 0 7px 0;
+    margin: 42px 0 23px 0;
 }
 
 input[type="radio"]{
@@ -201,7 +211,7 @@ input[type="radio"]{
 .modal-window__checkbox-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 15px;
 }
 
 .checkbox {

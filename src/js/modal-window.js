@@ -1,40 +1,30 @@
 (function () {
-    document.querySelectorAll(".open-modal-btn").forEach(function (trigger) {
-        trigger.addEventListener("click", function () {
-            hideAllModalWindows();
+    document.querySelectorAll(".open-modal-btn").forEach(function(el) {
+        el.addEventListener("click", function () {
+            hideModalWindow();
             showModalWindow(this);
         });
     });
-
-    document.querySelectorAll(".modal-hide-btn").forEach(function (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-            hideAllModalWindows();
-        });
+    document.querySelectorAll(".modal-hide-btn").forEach(function(el) {
+        el.addEventListener("click", function () {
+            hideModalWindow();
+    })
     });
-    
-    document.querySelector(".modal-fader").addEventListener("click", function () {
-        hideAllModalWindows();
+    modalFader.addEventListener("click", function () {
+            hideModalWindow();
     });
 })();
+
 function showModalWindow (buttonEl) {
     let modalTarget = "#" + buttonEl.getAttribute("data-target");
     
-    document.querySelector(".modal-fader").className += " active";
-    document.querySelector(modalTarget).className += " active";
+    document.querySelector(".modal-fader").classList.add("active");
+    document.querySelector(modalTarget).classList.add("active");
 
     document.getElementById(`option-${buttonEl.id}`).checked = true;
 }
-function hideAllModalWindows () {
-    let modalFader = document.querySelector(".modal-fader");
-    let modalWindows = document.querySelectorAll(".modal-window");
-    
-    if(modalFader.className.indexOf("active") !== -1) {
-        modalFader.className = modalFader.className.replace("active", "");
-    }
-    
-    modalWindows.forEach(function (modalWindow) {
-        if(modalWindow.className.indexOf("active") !== -1) {
-            modalWindow.className = modalWindow.className.replace("active", "");
-        }
-    });
+function hideModalWindow () {
+    document.querySelector(".modal-fader").classList.remove("active");
+    document.querySelector(".modal-window").classList.remove("active");
 }
+

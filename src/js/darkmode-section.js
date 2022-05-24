@@ -1,24 +1,19 @@
-const text = document.querySelectorAll('.dark-mode-toggle-text')
 const darkModeSection = document.querySelector('.darkmode-section')
 const darkBtn = document.getElementById("dark__btn")
 const lightBtn = document.getElementById("light__btn")
 
     lightBtn.addEventListener("click", function(){
-        darkModeSection.classList.remove("dark-mode")
         darkModeSection.classList.add("light-mode")
         lightBtn.classList.add('light-mode-on');
         darkBtn.classList.remove('light-mode-on');
-        text.forEach(e => e.innerHTML='light')
+        document.querySelectorAll('.dark-mode-toggle-text').forEach(e => e.innerHTML='light')
     })
     darkBtn.addEventListener("click", function(){
-        lightBtn.classList.remove('light-mode-on')
         darkModeSection.classList.remove("light-mode")
         darkBtn.classList.add('light-mode-on');
         lightBtn.classList.remove('light-mode-on');
-        text.forEach(e => e.innerHTML='dark')
+        document.querySelectorAll('.dark-mode-toggle-text').forEach(e => e.innerHTML='dark')
     })
-
-
 
 
 

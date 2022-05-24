@@ -30,8 +30,13 @@
         <div id="modal-window" class="modal-window">
             <form class="modal-form">
                 <h2 class="modal-header">Leave a request for the purchase of goods</h2>
-                <input class="modal-input" type="text" placeholder="name" required>
-                <input class="modal-input" type="email" placeholder="email" required>
+                <button class="modal-exit-btn  modal-hide-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z" fill="#222222"/>
+                    </svg>
+                </button>
+                    <input class="modal-input" type="text" placeholder="name" required>
+                    <input class="modal-input" type="email" placeholder="email" required>
                 <p class="modal-text modal-text__plan">Your plan?</p>
                 <div class="modal-window__radio-wrapper">
                     <input type="radio" name="select" id="option-standart" >
@@ -69,7 +74,7 @@
                         <span>Other</span>
                     </label>
                 </div>
-                <button  class="modal-btn modal-hide">send</button>
+                <button  class="modal-btn modal-hide-btn">send</button>
                 <div class="modal-window__loading-text">
                     <img class="loading-text__loading-icon" src="../src/assets/icons/loading-icon.svg" alt="">
                     loading...  
