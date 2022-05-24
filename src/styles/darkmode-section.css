@@ -1,30 +1,18 @@
-:root{
-    --primary-color: #222;
-    --secondary-color: #fff;
-    /* --text-color: #fff; */
-}
-
-.light-mode{
-    --primary-color: #fff;
-    --secondary-color: #222;
-    /* --text-color: #FF9209; */
-}
-
 .light-mode-text{
     --text-color: #FF9209;
 }
-
 
 .darkmode-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #222;
+    color:#fff;
 }
 
 .darkmode-section__img{
     width: 400px;
+    
 }
 
 .darkmode-section__line{
@@ -39,11 +27,12 @@
     flex-direction: column;
 }
 
-.darkmode-section__toggle-bttns__btn-container__btn{
+.darkmode-section__toggle-bttns__btn-container__btn { 
     border:none;
     cursor: pointer;
     background: none;
 }
+
 
 .darkmode-section__toggle-bttns{
     display: flex;
@@ -53,7 +42,46 @@
     margin-top:41px;
 }
 
-.darkmode-section__toggle-bttns__btn-container__text{
+.section-text__section-paragraph__darkmode,
+.section-text__section-heading__darkmode,
+.section-text__section-title__darkmode{
+    color: var(--secondary-color) !important;
+}
+
+.section-text__section-heading__span{
+    color:#FF9209
+}
+
+.light__btn{
+    color:#fff;
+    background: none;
+    border: none;
+} 
+
+.light__btn svg path{ 
+    fill:#fff
+} 
+
+.light-mode{
+    background: #fff;
+    color: #222;
+}
+
+.light-mode-on {
+    color:#FF9209;
+    background: none;
+    border: none;
+}
+
+.light-mode-on svg path{
+    fill: #FF9209
+}
+
+.darkmode-section__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -61,15 +89,10 @@
     margin-top: 2px;
 }
 
-.darkmode-section__toggle-bttns__text__off,
-.darkmode-section__toggle-bttns__text__on,
-.section-text__section-heading__span{
-    color:var(--text-color)
-}
+.dark__btn{
+    background: none;
+    border: none;
+} 
 
 
-.section-text__section-paragraph__darkmode,
-.section-text__section-heading__darkmode,
-.section-text__section-title__darkmode{
-    color: var(--secondary-color);
-}
+
