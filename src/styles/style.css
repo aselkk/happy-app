@@ -13,6 +13,7 @@
 @import url("../styles/pricing-section.css");
 @import url("../styles/statistics-section.css");
 @import url("../styles/testimonials-section.css");
+@import url("../styles/burger-menu.css");
 
 
 *{
@@ -87,11 +88,6 @@ section{
     margin-top: 26px;
 }
 
-.menu-bar{
-    cursor: pointer;
-    display:none;
-}
-
 
 
 
@@ -111,6 +107,7 @@ section{
     .hero-section__img{
         transform: translateY(6px);
     }
+
 }
 
 @media (max-width:956px) {
