@@ -3,7 +3,7 @@ const section = document.querySelector('.countdown-section')
 async function getCountdown() {
     const response = await fetch('../src/data/config.json')
     const countdown = await response.json()
-    const date = new Date(countdown.timerEndDate)
+    let date = new Date(countdown.timerEndDate).getTime()
     const currentDate = new Date().getTime()
     let gap = date - currentDate
 
@@ -26,12 +26,12 @@ async function getCountdown() {
     document.querySelector('.countdown-nums__minutes').innerText = padZero(textMinute)
     document.querySelector('.countdown-nums__seconds').innerText = padZero(textSecond)
 
-    if(gap = 1000) {
+    if(gap <= 1000) {
         clearInterval(interval);
         document.getElementById('countdown-section').style.display = "none";
     }
 }
-
+getCountdown()
 let interval = setInterval(getCountdown, 1000);
 
 
