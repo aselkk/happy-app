@@ -3,6 +3,8 @@ document.getElementById("name").addEventListener('input', function(e){
   console.log(e.target.value);
   if (e.target.value.length >= 3) {
       document.querySelector(".name-input-error").innerHTML=''
+      document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #f2f2f2')
+
   }
 })
 
@@ -10,6 +12,7 @@ document.getElementById("mail").addEventListener('input', function(e){
   console.log(e.target.value);
   if (e.target.value.length >= 3) {
       document.querySelector(".mail-input-error").innerHTML=''
+      document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #F2F2F2')
   }
 })
 
@@ -35,7 +38,7 @@ function validate(e) {
   validateFields(mail, 'mail');
 
   if (!checkboxes.length) {
-    document.querySelector(".checkbox-error").innerHTML = 'please choose one option'
+    document.querySelector(".checkbox-error").innerHTML = 'please choose one option*'
   }
 
   if (validateFields(name, 'name') && validateFields(mail, 'mail') && checkboxes.length) {
@@ -48,11 +51,15 @@ function validateFields(field, fieldName) {
   const doesFieldHasThreeCharacters = field.length < 3 && field.length > 1;
 
   if (!isFieldEmpty) {
-    document.querySelector(`.${fieldName}-input-error`).innerHTML = 'required field'
+    document.querySelector(`.${fieldName}-input-error`).innerHTML = 'this field is required*'
+    document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE'
+
   }
 
   if (doesFieldHasThreeCharacters) {
-    document.querySelector(`.${fieldName}-input-error`).innerHTML = 'please enter three or more characters'
+    document.querySelector(`.${fieldName}-input-error`).innerHTML = 'please enter three or more characters*'
+    document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE'
+
   }
 
   return isFieldEmpty && !doesFieldHasThreeCharacters
@@ -66,6 +73,7 @@ function submitData() {
   setTimeout(() => {
     document.querySelector('.modal-btn').removeAttribute('disabled')
     document.querySelector('.loader-wrapper').style = 'display: none'
+
 
     document.getElementById('name').value = ''
     document.getElementById('mail').value = ''
