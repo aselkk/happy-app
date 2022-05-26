@@ -27,6 +27,7 @@ async function getCountdown() {
     document.querySelector('.countdown-nums__seconds').innerText = padZero(textSecond)
 
     if(gap = 1000) {
+        clearInterval(interval);
         document.getElementById('countdown-section').style.display = "none";
     }
 }
