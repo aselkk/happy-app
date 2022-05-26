@@ -10,7 +10,7 @@
 <body>
 
     <header class="header">
-        
+
         <a href="#"><img src="/src/assets/icons/logo-header.svg" alt="header-logo"></a>
 
         <div class="menu-btn">
@@ -20,7 +20,7 @@
         </div>
 
         <nav class="navbar">
-            
+
             <ul class="navbar__links">
                 <li><a class="navbar__links__link-item" href="#features">Features</a></li>
                 <li><a class="navbar__links__link-item" href="#pricing">Pricing</a></li>
@@ -32,15 +32,17 @@
         </nav>
 
         <div id="modal-window" class="modal-window">
-            <form class="modal-form" name="modal-form"  onsubmit="validate(); return false">
+            <form class="modal-form" id="modal-form-id" name="modal-form">
                 <h2 class="modal-header">Leave a request for the purchase of goods</h2>
                 <button class="modal-exit-btn  modal-hide-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z" fill="#222222"/>
                     </svg>
                 </button>
-                    <input class="modal-input" name="user-name" type="text" placeholder="name" id="name" required>
-                    <input class="modal-input" name="user-mail" type="email" placeholder="email" id='email' >
+                    <input class="modal-input" name="user-name" type="text" placeholder="name" id="name">
+                    <span class="name-input-error error-text"></span>
+                    <input class="modal-input" name="user-mail" type="email" placeholder="email" id='mail' >
+                    <span class="mail-input-error error-text"></span>
                 <p class="modal-text modal-text__plan">Your plan?</p>
                 <div class="modal-window__radio-wrapper">
                     <input class='modal-radio-buttons'  type="radio" name="select" id="option-standart" >
@@ -62,26 +64,29 @@
                 <p class="modal-text modal-text__sm">How did you know about our app?</p>
                 <div class="modal-window__checkbox-wrapper">
                     <label class="custom-checkbox">
-                        <input name='social-medila-cb' type="checkbox" value="value-1">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-1">
                         <span>Facebook</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input name='social-medila-cb' type="checkbox" value="value-2">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-2">
                         <span>Instagram</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input name='social-medila-cb' type="checkbox" value="value-3">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-3">
                         <span>Youtube</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input name='social-medila-cb' type="checkbox" value="value-4">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-4">
                         <span>Other</span>
                     </label>
+                    <span class="checkbox-error error-text"></span>
                 </div>
                 <button  type="submit" name="submit" class="modal-btn">send</button>
-                <div class="modal-window__loading-text">
-                    <img class="loading-text__loading-icon" src="../src/assets/icons/loading-icon.svg" alt="">
-                    loading...  
+                <div class="loader-wrapper">
+                    <div class="modal-window__loading-text">
+                        <img class="loading-text__loading-icon" src="../src/assets/icons/loading-icon.svg" alt="">
+                        loading...
+                    </div>
                 </div>
             </div>
             </form>
@@ -95,25 +100,25 @@
             <h3 class="countdown-section__header-bottom">there is very little left</h3>
             <div class="countdown-section__countdown-container">
                 <div class="countdown-item">
-                    <p class="countdown-nums countdown-nums__days">00</p>  
-                    <p class="countdown-text">days</p>    
+                    <p class="countdown-nums countdown-nums__days">00</p>
+                    <p class="countdown-text">days</p>
                 </div>
                 <div class="dividor"></div>
                 <div class="countdown-item">
-                    <p class="countdown-nums countdown-nums__hours">00</p>    
-                    <p class="countdown-text">hours</p>    
-                </div>
-                <div class="dividor"></div>
-
-                <div class="countdown-item">
-                    <p class="countdown-nums countdown-nums__minutes">00</p>    
-                    <p class="countdown-text">minutes</p>    
+                    <p class="countdown-nums countdown-nums__hours">00</p>
+                    <p class="countdown-text">hours</p>
                 </div>
                 <div class="dividor"></div>
 
                 <div class="countdown-item">
-                    <p class="countdown-nums countdown-nums__seconds">00</p>    
-                    <p class="countdown-text">seconds</p>    
+                    <p class="countdown-nums countdown-nums__minutes">00</p>
+                    <p class="countdown-text">minutes</p>
+                </div>
+                <div class="dividor"></div>
+
+                <div class="countdown-item">
+                    <p class="countdown-nums countdown-nums__seconds">00</p>
+                    <p class="countdown-text">seconds</p>
                 </div>
             </div>
     </section>
@@ -136,7 +141,7 @@
                     read more
                 </button>
             </div>
-        </div>  
+        </div>
         <div class="hero-section__img-container">
             <img class="hero-section__img" src="/src/assets/img/main-img.png" alt="logo">
         </div>
@@ -259,7 +264,7 @@
             <p class="section-text__section-paragraph__advantages">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
         </div>
     </section>
-    
+
     <!-- darkmode section -->
     <section class="darkmode-section" id="123">
 
@@ -271,7 +276,7 @@
             <img class="darkmode-section__img" src="/src/assets/img/night-mode-img.png" alt="dark mode image">
 
         <div class="darkmode-section__line"></div>
-        
+
         <div class="darkmode-section__toggle-bttns">
             <div class="darkmode-section__btn-container">
                 <button id="light__btn" class=" darkmode-section__btn light__btn">
@@ -282,8 +287,8 @@
                 </button>
                     <!-- <img class="darkmode-section__toggle-bttns__btn-container__btn darkmode-section__toggle-bttns__btn-container__btn-off" src="/src/assets/img/light-mode-off.svg" alt="light mode"> -->
             </div>
-            
-            <div class="darkmode-section__btn-container"> 
+
+            <div class="darkmode-section__btn-container">
                 <button id="dark__btn" class="darkmode-section__btn dark__btn light-mode-on">
                     <svg class=" darkmode-section__toggle-bttns__btn-container__btn light-mode-on" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path class="darkmode-section__toggle-bttns__btn-container__btn darkmode-section__toggle-bttns__btn-container__btn__on" d="M7.43316 5.34005C7.43316 3.63645 7.83911 2.03985 8.53031 0.599617C8.75522 0.127769 8.56322 -0.121872 8.07225 0.0591861C3.36549 1.81216 0 6.3002 0 11.614C0 18.453 5.54333 24 12.384 24C17.697 24 22.187 20.634 23.9397 15.9319C24.1235 15.4409 23.8711 15.2489 23.3994 15.4738C21.9566 16.1624 20.3603 16.5684 18.657 16.5684C12.4553 16.5656 7.43316 11.5399 7.43316 5.34005Z" fill="#222222"/>
@@ -373,7 +378,7 @@
             <h3 class="section-text__section-heading">FAQ</h3>
             <p class="section-text__section-paragraph">Some questions & some answers</p>
         </div>
-        
+
         <div class="faq-section__faqs">
             <div class="faq-section__faqs__faq-container">
                 <h3 class="faq-section__faqs__faq-container__question">What devices does H(app)y support?</h3>
@@ -395,7 +400,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
     <footer class="footer">
@@ -418,6 +423,7 @@
     <script src="../src/js/countdown-section.js"></script>
     <script src="../src/js/pricing-section.js"></script>
     <script src="../src/js/modal-window.js"></script>
+    <script src="../src/js/validation.js"></script>
     <script src="../src/js/main.js"></script>
 </body>
 </html>

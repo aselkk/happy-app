@@ -75,6 +75,7 @@
     background-color: #F2F2F2;
     padding: 0 9px;
     margin-bottom: 17px;
+    position: relative;
 }
 
 .modal-input::placeholder{
@@ -282,3 +283,31 @@ input[type="radio"]{
     margin-top: 18px;
 }
 
+.loader-wrapper{
+    display: none;
+}
+
+.name-input-error{
+    position: absolute;
+    top: 165px;
+    color: rgb(228, 32, 32);
+    font-size: 10.5px;
+}
+
+.mail-input-error{
+    position: absolute;
+    top: 214px;
+    color: rgb(228, 32, 32);
+    font-size: 10.5px;
+}
+
+.checkbox-error{
+    position: absolute;
+    bottom: 114px;
+    color: rgb(228, 32, 32);
+    font-size: 10.5px;
+}
+
+.modal-btn:disabled{
+    background: lightgray;
+}

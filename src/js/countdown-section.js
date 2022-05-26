@@ -1,12 +1,11 @@
 const section = document.querySelector('.countdown-section')
 
-
 async function getCountdown() {
-    const response = await fetch('../src/data/config.json');
-    const countdown = await response.json();
+    const response = await fetch('../src/data/config.json')
+    const countdown = await response.json()
     const date = new Date(countdown.timerEndDate)
     const currentDate = new Date().getTime()
-    const gap = date - currentDate
+    let gap = date - currentDate
 
     const second = 1000
     const minute = second * 60
@@ -27,12 +26,13 @@ async function getCountdown() {
     document.querySelector('.countdown-nums__minutes').innerText = padZero(textMinute)
     document.querySelector('.countdown-nums__seconds').innerText = padZero(textSecond)
 
-    if(gap < 10000) {
+    if(gap = 1000) {
         document.getElementById('countdown-section').style.display = "none";
     }
 }
 
-setInterval(getCountdown, 1000);
+let interval = setInterval(getCountdown, 1000);
+
 
 
 
