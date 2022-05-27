@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 
-.darkmode-section__toggle-bttns__btn-container__btn { 
+.darkmode-section__btn { 
     border:none;
     cursor: pointer;
     background: none;
@@ -42,13 +42,13 @@
     margin-top:41px;
 }
 
-.section-text__section-paragraph__darkmode,
-.section-text__section-heading__darkmode,
-.section-text__section-title__darkmode{
+.section-paragraph__darkmode,
+.section-heading__darkmode,
+.section-title__darkmode{
     color: var(--secondary-color) !important;
 }
 
-.section-text__section-heading__span{
+.section-heading__span{
     color:#FF9209
 }
 

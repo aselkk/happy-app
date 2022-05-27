@@ -12,11 +12,10 @@
     margin-top: 41px;
     display: flex;
     flex-wrap: wrap;
-
     gap: 16px
 }
 
-.testimonials-section__testimonials_cards__card-item{
+.testimonials_cards__card-item{
     display: flex;
     background-color: #fff;
     border-radius:20px;

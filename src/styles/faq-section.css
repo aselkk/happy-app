@@ -13,7 +13,7 @@
     justify-content: space-between;
 }
 
-.faq-section__faqs__faq-container{
+.faq-container{
     width: 576px;
     color: #222;
     margin-bottom: 26px;
@@ -23,17 +23,17 @@
     margin-bottom: 42px;
 }
 
-.section-text__section-heading{
+.section-heading{
     margin-bottom: 13px;
 }
 
-.faq-section__faqs__faq-container__question{
+.faq-container__question{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.faq-section__faqs__faq-container__answer{
+.faq-container__answer{
     font-size: 16px;
 }
 

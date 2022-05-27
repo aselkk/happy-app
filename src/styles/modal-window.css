@@ -320,6 +320,6 @@ input[type="radio"]{
     0% { transform: rotate(0deg); }
     100% {  transform: rotate(359deg); }
 }
-.loading-text__loading-icon {
+.loading-icon {
     animation: spin 2s linear infinite;
 }

@@ -47,20 +47,20 @@ section{
     z-index: -1;
 }
 
-.section-text__section-paragraph{
+.section-paragraph{
     width:100%;
     color:#666;
     font-weight: 300;
 }
 
-.section-text__section-title{
+.section-title{
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;  
 }
 
-.section-text__section-heading{
+.section-heading{
     font-size: 32px;
     font-weight: 400;
 }
@@ -71,18 +71,18 @@ section{
     margin-bottom: 45px;
 }
 
-.section-text__section-heading__advantages{
+.section-heading__advantages{
     width: 80%;
     margin: 5px 0 15px 0;
 }
 
-.section-text__section-paragraph__advantages{
+.section-paragraph__advantages{
     width: 80%;
     color:#666;
     font-weight: 300;
 }
 
-.section-text__section-btn{
+.section-btn{
     border:none;
     margin-top: 26px;
 }

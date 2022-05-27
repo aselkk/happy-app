@@ -82,6 +82,6 @@ function submitData() {
     document.querySelector(".modal-fader").classList.remove("active")
     document.querySelector(".modal-window").classList.remove("active")
 
-  }, 3000)
+  }, 2000)
 }
 

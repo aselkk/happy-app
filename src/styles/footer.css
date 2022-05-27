@@ -7,13 +7,13 @@
     gap: 30px;
 }
 
-.footer-container__sm-links{
+.sm-links{
     display: flex;
     gap: 20px;
     background: none;
 }
 
-.footer-container__sm-links__link{
+.sm-links__link{
     border:none;
     cursor: pointer;
     background: none;

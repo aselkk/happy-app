@@ -20,13 +20,13 @@
     align-items: center;
 }
 
-.navbar__links{
+.menu{
     display: flex;
     gap:2.625rem;
     list-style: none;
 }
 
-.navbar__links__link-item{
+.menu__link{
     
     color: #666;
     font-size: 15px;

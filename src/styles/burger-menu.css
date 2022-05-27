@@ -21,7 +21,7 @@ body{
     flex-direction: column;
 }
 
-.navbar__links{
+.menu{
     flex-direction: column;
     justify-content: center;
     align-items: center;

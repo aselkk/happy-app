@@ -8,14 +8,14 @@
     background: #fff;
 }  
 
-.section-text__section-btn{
+.section-btn{
     cursor: pointer;
 }
 
-.section-text__section-btn:active{
+.section-btn:active{
     transform: scale(0.98);
 }
 
-.section-text__section-btn:focus{
+.section-btn:focus{
     outline: 2px solid #5AB0FF
 }

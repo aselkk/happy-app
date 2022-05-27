@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .feature-card{
@@ -46,37 +47,37 @@
     border-radius: 20px;
 }
 
-.feature-card__info__title{
+.feature-card__title{
     font-size: 24px;
     font-weight: 300;
 }
-.feature-card__info__title__calendar-view{
+.feature-card__title__calendar-view{
     color:#0278ED;
 }
-.feature-card__info__title__lists{
+.feature-card__title__lists{
     color: #FF5437;
 }
-.feature-card__info__title__varied-type{
+.feature-card__title__varied-type{
     color: #FF9209;
 }
-.feature-card__info__title__split-screen{
+.feature-card__title__split-screen{
     color: #E738CE;
 }
-.feature-card__info__title__uploads{
+.feature-card__title__uploads{
     color: #00C6DF;
 }
-.feature-card__info__title__focus-mode{
+.feature-card__title__focus-mode{
     color: #B25DF8;
 }
 
-.feature-card__info__heading{
+.feature-card__heading{
     color:#222;
     font-weight: 400;
     line-height: 22.54px;
 
 }
 
-.feature-card__info__icon{
+.feature-card__icon{
     position: absolute;
     top: -35px;
     z-index: 50
