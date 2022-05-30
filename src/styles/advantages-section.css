@@ -16,3 +16,35 @@
     object-position: 100% 0;
     transform: translateY(7px);
 }
+
+@media (max-width:768px) {
+
+    .advantages-section__img {
+        width: 16.5rem;
+        height:344px;
+        transform: translateY(7px);
+    }
+    .advantages-section{
+        padding: 41px 30px 0 30px !important;
+    }
+    .section-heading__advantages{
+        font-size:24px;
+    }
+    .hero-section__text{
+        margin-bottom: 61px !important;
+    }
+    .section-heading{
+        font-size:24px !important;
+    }
+    .section-paragraph__advantages{
+        width: 100%  !important;
+
+    }
+}
+
+@media (max-width:425px) {
+
+    .advantages-section{
+        flex-direction: column;
+    };
+}

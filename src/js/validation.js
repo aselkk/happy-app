@@ -4,7 +4,6 @@ document.getElementById("name").addEventListener('input', function(e){
   if (e.target.value.length >= 3) {
       document.querySelector(".name-input-error").innerHTML=''
       document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #f2f2f2')
-
   }
 })
 
@@ -33,6 +32,7 @@ function validate(e) {
   const name = document.forms['modal-form']['user-name'].value;
   const mail = document.forms['modal-form']['user-mail'].value;
   const checkboxes = document.querySelectorAll('input[name="social-media-cb"]:checked');
+  console.log(checkboxes);
 
   validateFields(name, 'name');
   validateFields(mail, 'mail');
@@ -65,7 +65,6 @@ function validateFields(field, fieldName) {
   return isFieldEmpty && !doesFieldHasThreeCharacters
 }
 
-
 function submitData() {
   document.querySelector('.modal-btn').setAttribute('disabled', '')
   document.querySelector('.loader-wrapper').style = 'display: block'
@@ -73,7 +72,6 @@ function submitData() {
   setTimeout(() => {
     document.querySelector('.modal-btn').removeAttribute('disabled')
     document.querySelector('.loader-wrapper').style = 'display: none'
-
 
     document.getElementById('name').value = ''
     document.getElementById('mail').value = ''

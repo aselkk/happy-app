@@ -18,3 +18,9 @@
     cursor: pointer;
     background: none;
 }
+
+@media (max-width:425px) {
+    .footer__logo{
+        width: 70px;
+    }
+}

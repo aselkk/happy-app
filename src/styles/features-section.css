@@ -82,3 +82,25 @@
     top: -35px;
     z-index: 50
 }
+
+
+@media (max-width:768px) {
+    .section-title {
+        font-size: 13px;
+    }
+    .section-heading {
+        font-size: 25px;
+    }
+    .feature-card{
+        width: 18.688rem;
+        height: 28.625rem;
+        padding-top:15px;
+    }
+}
+
+@media (max-width:425px) {
+
+    .section-text{
+        width: 100% !important; 
+    }
+}

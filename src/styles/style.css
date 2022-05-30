@@ -108,19 +108,12 @@ section{
     body{
         font-size: 87%;
     }
-
-    .header{
-        padding: 1rem 3.5rem; 
-    } 
 }
 
 @media (max-width:400px) {
     body{
         font-size: 70%;
     }
-    .header{
-        padding: .938rem 1.25rem; 
-    }    
 }
 
 

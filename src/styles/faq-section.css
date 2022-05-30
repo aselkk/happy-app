@@ -37,4 +37,17 @@
     font-size: 16px;
 }
 
+@media (max-width:425px) {
+
+    .faq-container__answer{
+        font-size:12px;
+    }
+    .faq-container__question{
+        font-size:15px;
+    }
+
+    .faq-section{
+        padding: 3.25rem 2.5rem !important;
+    }
+}
 

@@ -21,3 +21,21 @@
     letter-spacing: 2px;
     text-transform: uppercase;  
 }
+
+
+@media (max-width:768px) {
+
+    .statistics-number {
+        font-size: 78px;
+    }
+    .statisctics-caption{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:425px) {
+
+    .statistics-section {
+        flex-direction: column;
+    }
+}

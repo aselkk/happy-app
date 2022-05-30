@@ -102,3 +102,38 @@
 .card-item__btn__lifetime:hover{
     background-color: #ff9209c9;
 }
+
+@media (max-width:768px) {
+    .pricing-section__section-text{
+        margin-bottom: 56px;
+    }
+    .card-item__btn{
+        padding: 8px 21px;
+    }
+    .card-item__plan-type{
+        font-size:15px;
+    }
+    .card-item__price{
+        font-size:40px;
+    }
+    .pricing-section__pricing_cards__card-item{
+        width: 11.688rem;
+        height: 11.125rem;
+        padding: 23px 0;
+        line-height: 27px;
+    }
+    
+}
+
+@media (max-width:425px) {
+
+    .pricing-section__section-text{
+        width: 100%;
+    }
+
+    .pricing-section__pricing_cards {
+        flex-wrap: unset;
+        text-transform: capitalize;
+        flex-direction: column;
+    }
+}

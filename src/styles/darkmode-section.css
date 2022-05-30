@@ -95,4 +95,9 @@
 } 
 
 
+@media (max-width:768px) {
+    .darkmode-section__img{
+        width: 260px;
+    }
+}
 

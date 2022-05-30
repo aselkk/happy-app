@@ -24,6 +24,8 @@
     display: flex;
     gap:2.625rem;
     list-style: none;
+    max-width:1195px;
+
 }
 
 .menu__link{
@@ -53,4 +55,18 @@
 
 .navbar__button:focus{
     outline: 2px solid #5AB0FF
+}
+
+
+
+@media (max-width:956px) {
+    .header{
+        padding: 1rem 3.5rem; 
+    } 
+}
+
+@media (max-width:400px) {
+    .header{
+        padding: .938rem 1.25rem; 
+    }    
 }

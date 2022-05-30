@@ -50,3 +50,135 @@
 .close-countdown-section{
     display: none;
 }
+
+@media (max-width:968px) {
+    .countdown-section__header-top {
+        font-size: 47px;
+    }
+    .countdown-section__header-bottom {
+        font-size: 29px;
+    }    
+}
+
+@media (max-width:928px) {
+    .countdown-section__header-top {
+        font-size: 40px;
+    }
+    .countdown-section__header-bottom {
+        font-size: 25px;
+    }    
+    .countdown-nums {
+        font-size: 87px;
+        width: 100px;
+    }
+}
+
+@media (max-width:794px) {
+    .countdown-section__header-top {
+        font-size: 35px;
+    }
+    .countdown-section__header-bottom {
+        font-size: 20px;
+    }    
+    .countdown-nums {
+        font-size: 87px;
+        width: 100px;
+    }
+    section {
+        padding: 5.25rem 9.5rem !important;
+    }
+    .dividor {
+        height: 69px;
+        width: 6px;
+    }
+}
+
+
+@media (max-width:768px) {
+    section{ 
+        padding: 4.25rem 4.5rem !important; 
+    } 
+    .dividor {
+        height: 69px;
+        width: 6px;
+    }
+    .countdown-nums {
+        font-size: 73px;
+        width: 83px;
+    }
+    .countdown-text{
+        font-size: 20px;
+    }    
+}
+
+
+
+
+@media (max-width:834px) {
+    .countdown-section__header-top {
+        font-size: 33px;
+    }
+    .countdown-section__header-bottom {
+        font-size: 15px;
+    }     
+}
+
+
+@media (max-width:425px) {
+    .countdown-nums {
+        font-size: 58px;
+        width: 55px;
+    }
+    .countdown-text{
+        font-size: 13px;
+    }  
+    .dividor {
+        height: 58px;
+        width: 4px;
+        transform: translateY(-10px)
+    }
+}
+
+@media (max-width:375px) {
+
+    .countdown-nums {
+        font-size: 51px;
+        width: 46px;
+    }
+    .countdown-text{
+        font-size: 12px;
+    }  
+    /* .dividor {
+        height: 58px;
+        width: 4.px;
+        transform: translateY(-10px)
+    } */
+}
+
+@media (max-width:320px) {
+
+    .countdown-section {
+        padding: 2.25rem 0.5rem;
+    }
+
+    .countdown-nums {
+        font-size: 41px;
+        width: 40px;
+    }
+    .countdown-text{
+        font-size: 12px;
+    }  
+    .dividor {
+        height: 36px;
+        width: 4px;
+        transform: translateY(-10px)
+    } 
+    .countdown-section__header-top {
+        font-size: 29px;
+    }
+
+    .countdown-section__countdown-container{
+        gap:17px;
+    }
+}
+

@@ -30,3 +30,36 @@
 .card-item__testimonial{
     margin-bottom: 22px;
 }
+
+
+@media (max-width:768px) {
+    .testimonials_cards__card-item{
+        width: 11.688rem;
+        height: 14rem;
+        flex-direction: column;
+        padding: 10px;  
+    }
+}
+
+
+@media (max-width:425px) {
+
+    .pricing-section__section-text{
+        width: 100%;
+    }
+
+    .pricing-section__pricing_cards {
+        flex-wrap: unset;
+        text-transform: capitalize;
+        flex-direction: column;
+    }
+
+    .testimonials-section__testimonials_cards {
+        flex-wrap: unset;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .testimonials_cards__card-item {
+        width: 20.688rem;
+    }
+}

@@ -1,4 +1,7 @@
-@media (max-width:1000px) {
+.menu-btn{
+	display:none;
+}
+@media (max-width:820px) {
 body{
     font-size: 87%;
 }
@@ -6,7 +9,6 @@ body{
 .menu-btn{
     display:block;
 }
-
 .navbar {
 	position: fixed;
 	top: 0;
