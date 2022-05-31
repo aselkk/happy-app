@@ -10,7 +10,6 @@
 <body>
 
     <header class="header">
-
         <a href="#"><img src="/src/assets/icons/logo-header.svg" alt="header-logo"></a>
 
         <div class="menu-btn">
@@ -27,23 +26,30 @@
                 <li><a class="menu__link" href="#testimonials">Testimonials</a></li>
                 <li><a class="menu__link" href="#faq">FAQ</a></li>
             </ul>
-
-            <a href="#link"><button class="navbar__button">get this app</button></a>
+            <form style="display: inline" action="#link" method="get">
+                <button class="navbar__button">get this app</button>
+            </form>
+            
         </nav>
 
         <div id="modal-window" class="modal-window">
             <form class="modal-form" id="modal-form-id" name="modal-form">
+
                 <h2 class="modal-header">Leave a request for the purchase of goods</h2>
+
                 <button class="modal-exit-btn  modal-hide-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z" fill="#222222"/>
                     </svg>
                 </button>
-                    <input class="modal-input name-modal-input" name="user-name" type="text" placeholder="name" id="name">
-                    <span class="error-text name-input-error"></span>
-                    <input class="modal-input mail-modal-input" name="user-mail" type="email" placeholder="email" id='mail' >
-                    <span class="error-text mail-input-error"></span>
+
+                <input class="modal-input name-modal-input" name="user-name" type="text" placeholder="name" id="name">
+                <span class="error-text name-input-error"></span>
+                <input class="modal-input mail-modal-input" name="user-mail" type="email" placeholder="email" id='mail'>
+                <span class="error-text mail-input-error"></span>
+
                 <p class="modal-text modal-text__plan">Your plan?</p>
+
                 <div class="modal-window__radio-wrapper">
                     <input class='modal-radio-buttons'  type="radio" name="select" id="option-standart" >
                     <input class='modal-radio-buttons' type="radio" name="select" id="option-premium">
@@ -61,8 +67,11 @@
                         <span class="option__lifetime">Lifetime</span>
                     </label>
                 </div>
+
                 <p class="modal-text modal-text__sm">How did you know about our app?</p>
+
                 <div class="modal-window__checkbox-wrapper">
+
                     <label class="custom-checkbox">
                         <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-1">
                         <span>Facebook</span>
@@ -79,19 +88,22 @@
                         <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-4">
                         <span>Other</span>
                     </label>
+
                     <span class="checkbox-error error-text"></span>
+
                 </div>
+
                 <button type="submit" name="submit" class="modal-btn">send</button>
+
                 <div class="loader-wrapper">
                     <div class="modal-window__loading-text">
-                        <img class="loading-icon" src="../src/assets/icons/loading-icon.svg" alt="">
+                        <img class="loading-icon" src="../src/assets/icons/loading-icon.svg" alt=""/>
                         loading...
                     </div>
                 </div>
-            </div>
             </form>
+        </div>
         <div class="modal-fader"></div>
-
     </header>
 
     <!-- countdown section -->
@@ -266,9 +278,9 @@
     </section>
 
     <!-- darkmode section -->
-    <section class="darkmode-section" id="123">
+    <section class="darkmode-section" >
 
-        <div class="section-text" id="123">
+        <div class="section-text">
             <h2 class="section-title section-title__darkmode"><span class="dark-mode-toggle-text">dark</span> mode</h2>
             <h3 class="section-heading section-heading__darkmode">Also available in <span class="section-heading__span dark-mode-toggle-text ">dark</span></h3>
             <p class="section-paragraph section-paragraph__darkmode">Don't get blinded when using the H(app)y app at night, just turn off the lights. Lorem ipsum dolor sit amet.</p>
@@ -310,19 +322,19 @@
         <div class="pricing-section__pricing_cards">
 
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__standart">
-                    <h3 class="card-item__plan-type card-item__plan-type__standart"></h3>
+                    <h3 class="card-item__plan-type card-item__plan-type__standart"> </h3>
                     <p  class="card-item__price card-item__price__standart"></p>
                     <p  class="card-item__payment card-item__payment__standart"></p>
                     <button id='standart' class="card-item__btn card-item__btn__standart open-modal-btn" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__premium">
-                <h3 class="card-item__plan-type card-item__plan-type__premium"></h3>
+                <h3 class="card-item__plan-type card-item__plan-type__premium"> </h3>
                 <p  class="card-item__price card-item__price__premium"></p>
                 <p  class="card-item__payment card-item__payment__premium"></p>
                 <button id='premium' class="card-item__btn card-item__btn__premium open-modal-btn" data-target="modal-window">buy now</button>
             </div>
             <div class="pricing-section__pricing_cards__card-item pricing-section__pricing_cards__card-item__lifetime">
-                <h3 class="card-item__plan-type card-item__plan-type__lifetime"></h3>
+                <h3 class="card-item__plan-type card-item__plan-type__lifetime"> </h3>
                 <p  class="card-item__price card-item__price__lifetime"></p>
                 <p  class="card-item__payment card-item__payment__lifetime"></p>
                 <button id='lifetime' class="card-item__btn card-item__btn__lifetime open-modal-btn" data-target="modal-window">buy now</button>
@@ -339,19 +351,19 @@
         </div>
         <div class="testimonials-section__testimonials_cards">
             <div class="testimonials_cards__card-item">
-                <p class="card-item__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
-                <p  class="card-item__author">Pam Beesly</p>
-                <p  class="card-item__position">Top Manager Happy Co</p>
+                <p class="card-item__testimonial"></p>
+                <p  class="card-item__author"></p>
+                <p  class="card-item__position"></p>
             </div>
             <div class="testimonials_cards__card-item">
-                <p class="card-item__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
-                <p  class="card-item__author">Pam Beesly</p>
-                <p  class="card-item__position">Top Manager Happy Co</p>
+                <p class="card-item__testimonial"></p>
+                <p  class="card-item__author"></p>
+                <p  class="card-item__position"></p>
             </div>
             <div class="testimonials_cards__card-item">
-                <p class="card-item__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
-                <p  class="card-item__author">Pam Beesly</p>
-                <p  class="card-item__position">Top Manager Happy Co</p>
+                <p class="card-item__testimonial"></p>
+                <p  class="card-item__author"></p>
+                <p  class="card-item__position"></p>
             </div>
         </div>
     </section>
@@ -401,7 +413,7 @@
 
 
     <footer class="footer">
-            <img class="footer__logo"; src="/src/assets/icons/logo-footer.svg" alt="logo">
+            <img class="footer__logo" src="/src/assets/icons/logo-footer.svg" alt="logo">
             <div class="sm-links">
                 <button class="sm-links__link">
                     <img src="/src/assets/icons/twitter-icon.svg" alt="twitter logo">
