@@ -1,6 +1,5 @@
 
 document.getElementById("name").addEventListener('input', function(e){
-  console.log(e.target.value);
   if (e.target.value.length >= 3) {
       document.querySelector(".name-input-error").innerHTML=''
       document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #f2f2f2')
@@ -8,7 +7,6 @@ document.getElementById("name").addEventListener('input', function(e){
 })
 
 document.getElementById("mail").addEventListener('input', function(e){
-  console.log(e.target.value);
   if (e.target.value.length >= 3) {
       document.querySelector(".mail-input-error").innerHTML=''
       document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #F2F2F2')
@@ -32,16 +30,15 @@ function validate(e) {
   const name = document.forms['modal-form']['user-name'].value;
   const mail = document.forms['modal-form']['user-mail'].value;
   const checkboxes = document.querySelectorAll('input[name="social-media-cb"]:checked');
-  console.log(checkboxes);
 
-  validateFields(name, 'name');
-  validateFields(mail, 'mail');
+  const isNameFieldValid = validateFields(name, 'name');
+  const isEmailFieldValid = validateFields(mail, 'mail');
 
   if (!checkboxes.length) {
     document.querySelector(".checkbox-error").innerHTML = 'please choose one option*'
   }
 
-  if (validateFields(name, 'name') && validateFields(mail, 'mail') && checkboxes.length) {
+  if (isNameFieldValid && isEmailFieldValid && checkboxes.length) {
     submitData();
   }
 }
@@ -66,8 +63,15 @@ function validateFields(field, fieldName) {
 }
 
 function submitData() {
-  document.querySelector('.modal-btn').setAttribute('disabled', '')
-  document.querySelector('.loader-wrapper').style = 'display: block'
+  document.querySelector('.modal-btn').setAttribute('disabled', '');
+  document.querySelector('.loader-wrapper').style = 'display: block';
+
+  const values = {
+    name: document.forms['modal-form']['user-name'].value,
+    mail: document.forms['modal-form']['user-mail'].value,
+    plan: document.querySelector('input[name="select"]:checked').value,
+    social: document.querySelector('input[name="social-media-cb"]:checked').value,
+  }
 
   setTimeout(() => {
     document.querySelector('.modal-btn').removeAttribute('disabled')
@@ -80,6 +84,6 @@ function submitData() {
     document.querySelector(".modal-fader").classList.remove("active")
     document.querySelector(".modal-window").classList.remove("active")
 
+    console.log(values);
   }, 2000)
 }
-

@@ -1,45 +1,42 @@
 
-.modal-fader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 99998;
-    background: rgba(0,0,0,0.8);
-}
-.modal-fader.active {
-    display: block;
-}
 .modal-window {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99999;
-    background: #fff;
-    font-family: sans-serif;
-    top: 70%;
-    width: 506px;
-    height: 805px;
+     display: none; 
+      position: fixed; 
+      z-index: 109990; 
+      justify-content: center; 
+      align-items: center; 
+      left: 0; 
+      top: 0; 
+      width: 100%; 
+      overflow-y: scroll; 
+      height: 100%; 
+      background-color: rgba(0, 0, 0, 0.4);
+    
 }
-.modal-form{
+.modal-window__modal-form{
     display: flex;
     justify-content:space-between;
     align-items:center;
     flex-direction:column;
-    height: 100%;
-    position: relative;
-    margin: 0;
-    padding: 38px 30px 56px 30px;}
+    height: auto;
+margin-top: 10rem;
+margin-bottom: 3rem;
+    padding: 38px 86px 56px 86px;
+
+        position: relative; 
+        width: 506px; 
+        background-color: white; 
+        color: black; 
+        text-align: center; 
+        border-radius: 4px; 
+}
 
 .modal-window.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
+
 }
 
 .modal-btn {
@@ -52,8 +49,8 @@
     letter-spacing: 2px;
     font-size: 13px;
     text-transform: uppercase;
-    width: 44%;
-    height: 6%;
+    width: 100%;
+    height:40px;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -68,17 +65,19 @@
 }
 
 .modal-input{
-    width: 78%;
-    height: 5.5%;
+    width:100%;
+    height:42px;
     border:none;
     background-color: #F2F2F2;
     padding: 0 9px;
     margin-bottom: 17px;
     position: relative;
+    border-radius: 4px;
 }
 
 .modal-input::placeholder{
     font-weight: 400;
+    color:#7D7D7D
 }
 
 .modal-text{
@@ -104,7 +103,7 @@
 .modal-window__radio-wrapper .option{
     background: #fff;
     height: 39px;
-    width: 80.6%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,13 +217,14 @@ input[type="radio"]{
     margin-bottom: 0.2em;
     }
 
-    .custom-checkbox>input {
+        .custom-checkbox>input {
         position: absolute;
         z-index: -1;
         opacity: 0;
     }
 
     .custom-checkbox>span {
+        width: 120px;
         display: inline-flex;
         align-items: center;
         user-select: none;

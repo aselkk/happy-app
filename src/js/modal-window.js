@@ -16,16 +16,23 @@
 })()
 
 function showModalWindow (buttonEl) {
-    let modalTarget = "#" + buttonEl.getAttribute("data-target")
+    // let modalTarget = "#" + buttonEl.getAttribute("data-target")
+    document.body.style.overflow='hidden'
 
-    document.querySelector(".modal-fader").classList.add("active")
-    document.querySelector(modalTarget).classList.add("active")
+    document.querySelector(".modal-window").style.display='flex'
+    
+
+    // document.querySelector(modalTarget).classList.add("active")
 
     document.getElementById(`option-${buttonEl.id}`).checked = true
 }
 
 function hideModalWindow () {
-    document.querySelector(".modal-fader").classList.remove("active")
-    document.querySelector(".modal-window").classList.remove("active")
+
+    // document.querySelector(".modal-fader").classList.remove("active")
+   
+    document.querySelector(".modal-window").style.display='none'
+
+
 }
 
