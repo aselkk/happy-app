@@ -25,7 +25,7 @@
     gap:2.625rem;
     list-style: none;
     max-width:1195px;
-
+    align-items:center;
 }
 
 .menu__link{
@@ -34,7 +34,7 @@
     font-size: 15px;
 }
 
-.navbar__button{
+.navbar__links{
     padding: 10px 31px;
     border: none;
     background: #222;
@@ -47,15 +47,18 @@
     text-transform: uppercase; 
 }
 
-.navbar__button:hover{
+
+.navbar__links:hover{
     background-color: #4E4E4E;
 }
 
-.navbar__button:active{
+
+.navbar__links:active{
     transform: scale(0.98);
 }
 
-.navbar__button:focus{
+
+.navbar__links:focus{
     outline: 2px solid #5AB0FF
 }
 

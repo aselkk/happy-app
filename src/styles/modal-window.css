@@ -1,42 +1,29 @@
 
 .modal-window {
-     display: none; 
-      position: fixed; 
-      z-index: 109990; 
-      justify-content: center; 
-      align-items: center; 
-      left: 0; 
-      top: 0; 
-      width: 100%; 
-      overflow-y: scroll; 
-      height: 100%; 
-      background-color: rgba(0, 0, 0, 0.4);
-    
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    justify-content: center; 
+    align-items: center; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    overflow-y: scroll; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-window__modal-form{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-direction:column;
-    height: auto;
-margin-top: 10rem;
-margin-bottom: 3rem;
-    padding: 38px 86px 56px 86px;
-
-        position: relative; 
-        width: 506px; 
-        background-color: white; 
-        color: black; 
-        text-align: center; 
-        border-radius: 4px; 
-}
-
-.modal-window.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center
-
+.modal-form{
+    margin-top: 5rem; 
+    margin-bottom: 2rem; 
+    position: relative; 
+    width: 506px; 
+    height: auto; 
+    background-color: white; 
+    color: black; 
+    text-align: center; 
+    padding: 56px 90px; 
+    border-radius: 4px; 
+    text-align: center;
 }
 
 .modal-btn {
@@ -49,30 +36,27 @@ margin-bottom: 3rem;
     letter-spacing: 2px;
     font-size: 13px;
     text-transform: uppercase;
-    width: 100%;
-    height:40px;
+    width:172px;
+    height:42px;
     cursor: pointer;
     margin-top: 20px;
 }
 
 .modal-header{
-    text-align: center;
     font-size: 20px;
     font-weight: 400;
-    width: 75%;
     margin-bottom: 42px;
-
 }
 
 .modal-input{
-    width:100%;
-    height:42px;
+    width: 100%;
+    height:40px;
     border:none;
     background-color: #F2F2F2;
     padding: 0 9px;
     margin-bottom: 17px;
-    position: relative;
     border-radius: 4px;
+    position: relative;
 }
 
 .modal-input::placeholder{
@@ -89,6 +73,7 @@ margin-bottom: 3rem;
     border: none;
     background: none;
     right: 27px;
+    top: 27px;
     cursor:pointer;
 }
 
@@ -103,12 +88,11 @@ margin-bottom: 3rem;
 .modal-window__radio-wrapper .option{
     background: #fff;
     height: 39px;
-    width: 100%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
-    /* border-radius: 5px; */
     cursor: pointer;
     padding: 0 15px;
     border: 2px solid lightgrey;
@@ -217,7 +201,7 @@ input[type="radio"]{
     margin-bottom: 0.2em;
     }
 
-        .custom-checkbox>input {
+    .custom-checkbox>input {
         position: absolute;
         z-index: -1;
         opacity: 0;

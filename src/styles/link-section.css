@@ -8,14 +8,6 @@
     background: #fff;
 }  
 
-.section-btn{
-    cursor: pointer;
-}
-
-.section-btn:active{
-    transform: scale(0.98);
-}
-
-.section-btn:focus{
-    outline: 2px solid #5AB0FF
+.link-download{
+    margin-top: 27px;
 }

@@ -1,5 +1,5 @@
 .countdown-section{
-    background: url(/src/assets/img/background.png) no-repeat;
+    background: url(../assets/img/background.png) no-repeat;
     background-size: cover; 
     min-height: 57vh;
     z-index: -1;

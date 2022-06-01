@@ -1,7 +1,10 @@
-let menuBtn = document.querySelector('.menu-btn')
-let menu = document.querySelector('.navbar')
+	export const renderBurgerMenu = () => {
+		let menuBtn = document.querySelector('.menu-btn')
+		let menu = document.querySelector('.navbar')
+	
+	menuBtn.addEventListener('click', function(){
+		menuBtn.classList.toggle('active')
+		menu.classList.toggle('active')
+	})
 
-menuBtn.addEventListener('click', function(){
-	menuBtn.classList.toggle('active')
-	menu.classList.toggle('active')
-})
+	}

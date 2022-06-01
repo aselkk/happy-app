@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url("../styles/advantages-section.css");
-@import url("../styles/countdown-section.css");
-@import url("../styles/darkmode-section.css");
-@import url("../styles/faq-section.css");
-@import url("../styles/features-section.css");
-@import url("../styles/footer.css");
-@import url("../styles/footer.css");
-@import url("../styles/header.css");
-@import url("../styles/hero-section.css");
-@import url("../styles/link-section.css");
-@import url("../styles/modal-window.css");
-@import url("../styles/pricing-section.css");
-@import url("../styles/statistics-section.css");
-@import url("../styles/testimonials-section.css");
-@import url("../styles/burger-menu.css");
+@import url("./styles/advantages-section.css");
+@import url("./styles/countdown-section.css");
+@import url("./styles/darkmode-section.css");
+@import url("./styles/faq-section.css");
+@import url("./styles/features-section.css");
+@import url("./styles/footer.css");
+@import url("./styles/header.css");
+@import url("./styles/hero-section.css");
+@import url("./styles/link-section.css");
+@import url("./styles/modal-window.css");
+@import url("./styles/pricing-section.css");
+@import url("./styles/statistics-section.css");
+@import url("./styles/testimonials-section.css");
+@import url("./styles/burger-menu.css");
 
 
 *{
