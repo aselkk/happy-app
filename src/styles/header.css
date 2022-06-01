@@ -42,9 +42,12 @@
     border-radius: 4px;
     box-sizing: border-box;
     width: 172px;
-    color:#fff;
+    color: #fff;
     font-weight: 400;
-    text-transform: uppercase; 
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 37px;
 }
 
 

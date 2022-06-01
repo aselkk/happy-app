@@ -69,6 +69,20 @@
     outline: 2px solid #5AB0FF
 }
 
+.hero-section__btn:hover{
+    background-color: #4E4E4E;
+    }
+
+
+    .hero-section__btn:active{
+        transform: scale(0.98);
+    }
+
+
+    .hero-section__btn:focus{
+        outline: 2px solid #5AB0FF
+    }
+
 
 @media (max-width:1195px) {
     .hero-section{
@@ -142,7 +156,10 @@
     .hero-section__bttns {
         display: flex;
     }
-}
+
+
+
+    }
 
 
 @media (max-width:320px) {
