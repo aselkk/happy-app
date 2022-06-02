@@ -1,3 +1,4 @@
+import "./style.css"
 import { renderBurgerMenu } from "./js/burger-menu.js";
 renderBurgerMenu()
 import { renderCountdown } from "./js/countdown-section.js";
@@ -16,3 +17,4 @@ import { renderCloseBurgerMenu } from "./js/close-burger-menu.js";
 renderLink()
 initModalToggling()
 renderCloseBurgerMenu()
+console.log('sad2222')

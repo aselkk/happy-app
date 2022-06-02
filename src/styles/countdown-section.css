@@ -1,8 +1,7 @@
 .countdown-section{
     background: url(../assets/img/background.png) no-repeat;
     background-size: cover; 
-    min-height: 57vh;
-    z-index: -1;
+    padding: 60px 0 78px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,16 +9,32 @@
     text-align: center;
     flex-direction: column;
 }
-
-.countdown-section__header-top{
-    font-size: 50px;
+.countdown-block {
+    max-width: 729px;
+    height: 298px;
+}
+.countdown-section__header-top  {
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 1.1px;
     text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
 }
 
 .countdown-section__header-bottom{
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 1.5px;
+color: #FFFFFF;
 }
 
 .dividor{
@@ -30,8 +45,14 @@
 }
 
 .countdown-nums{
-    font-size:100px;
-    font-weight: 300;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
     width: 120px;
 }
 
@@ -43,8 +64,15 @@
 }
 
 .countdown-text{
-    font-size: 24px;
-    font-weight:600;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 1.5px;
+color: #FFFFFF;
+
 }
 
 .close-countdown-section{
@@ -81,12 +109,12 @@
         font-size: 20px;
     }    
     .countdown-nums {
-        font-size: 87px;
+        font-size: 10px;
         width: 100px;
     }
-    section {
+    /* section {
         padding: 5.25rem 9.5rem !important;
-    }
+    } */
     .dividor {
         height: 69px;
         width: 6px;
@@ -95,9 +123,9 @@
 
 
 @media (max-width:768px) {
-    section{ 
+    /* section{ 
         padding: 4.25rem 4.5rem !important; 
-    } 
+    }  */
     .dividor {
         height: 69px;
         width: 6px;
@@ -109,9 +137,14 @@
     .countdown-text{
         font-size: 20px;
     }    
+    .countdown-section__countdown-container{
+        display: flex;
+        gap:15px;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
-
-
 
 
 @media (max-width:834px) {
@@ -181,4 +214,3 @@
         gap:17px;
     }
 }
-

@@ -1,13 +1,18 @@
+.link-section {
+    padding: 100px 0 140px 0;
+    background: #fff;
+}
 
-.link-section{
+.link-section__section-text {
+    height: 209.171875px;
+    padding: 0 10px;
+    margin: auto;
+    max-width: 600px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #fff;
-}  
-
-.link-download{
-    margin-top: 27px;
+}
+.link-paragraph {
+    margin-bottom: 27px;
 }

@@ -1,5 +1,6 @@
-
 .testimonials-section{
+    width: 100%;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,8 +10,10 @@
 }  
 
 .testimonials-section__testimonials_cards{
+    max-width: 1200px;
     margin-top: 41px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px
 }
@@ -35,8 +38,9 @@
 
 @media (max-width:768px) {
     .testimonials_cards__card-item{
-        width: 11.688rem;
-        height: 14rem;
+        width: 14rem;
+        height: 13rem;
+        justify-content: space-between;
         flex-direction: column;
         padding: 10px;  
     }
@@ -61,6 +65,7 @@
         gap: 16px;
     }
     .testimonials_cards__card-item {
-        width: 20.688rem;
+        width: 14rem;
+        height: 13rem;
     }
 }

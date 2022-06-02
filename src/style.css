@@ -25,12 +25,9 @@
 }
 
 body{
-    margin: 0 auto;
-    max-width: 1440px;
-}
+    max-width: 100%;
+    margin-top: 90px;
 
-section{
-    padding: 6.25rem 9.5rem; 
 }
 
 .section__img {
@@ -50,10 +47,14 @@ section{
 }
 
 .section-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    font-weight: 300;
+    line-height: 20px;
     letter-spacing: 2px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    color: #222222;
 }
 
 .section-heading{
@@ -67,16 +68,6 @@ section{
     margin-bottom: 45px;
 }
 
-.section-heading__advantages{
-    width: 80%;
-    margin: 5px 0 15px 0;
-}
-
-.section-paragraph__advantages{
-    width: 80%;
-    color:#666;
-    font-weight: 300;
-}
 
 .section-btn{
     border:none;
@@ -91,12 +82,7 @@ section{
         font-size: 87%;
     }
     
-    .hero-section{
-        padding: 55px 100px 0px;
-    }
-    .hero-section__img{
-        transform: translateY(6px);
-    }
+
 
 }
 
@@ -111,5 +97,3 @@ section{
         font-size: 70%;
     }
 }
-
-
