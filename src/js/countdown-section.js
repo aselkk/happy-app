@@ -40,13 +40,12 @@ export const renderCountdown = () => {
         }
 
         }, passedDate)
-        
+
     }, 1000);
     
     function passedDate() {
         document.getElementById('countdown-section').style.display = "none";
     }
-
 }
 
 

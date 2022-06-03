@@ -1,6 +1,6 @@
 export const renderLink = () => {
 
-        const getlink = async () => {
+    const getlink = async () => {
         const get = await fetch("../config.json");
         const config = await get.json();
         const link = config.appStoreLink
@@ -9,7 +9,7 @@ export const renderLink = () => {
         link__config.forEach((a_link) => a_link.onclick = () => {
             a_link.setAttribute("href", link);
         })
-
     };
+
     getlink();
-    }
+}
