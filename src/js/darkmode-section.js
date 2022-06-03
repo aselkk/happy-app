@@ -10,6 +10,7 @@ export const renderDarkMode = () => {
         darkBtn.classList.remove('light-mode-on')
         document.querySelectorAll('.dark-mode-toggle-text').forEach(e => e.innerHTML = 'light')
     })
+    
     darkBtn.addEventListener("click", function () {
         darkModeSection.classList.remove("light-mode")
         darkBtn.classList.add('light-mode-on')

@@ -1,4 +1,5 @@
 export const initModalToggling = () =>{
+    
     document.querySelectorAll(".open-modal-btn").forEach(function(btn) {
         btn.addEventListener("click", function () {
             hideModalWindow()

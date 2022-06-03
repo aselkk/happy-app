@@ -1,6 +1,6 @@
 	export const renderBurgerMenu = () => {
-		let menuBtn = document.querySelector('.menu-btn')
-		let menu = document.querySelector('.navbar')
+		const menuBtn = document.querySelector('.menu-btn')
+		const menu = document.querySelector('.navbar')
 	
 		menuBtn.addEventListener('click', function(){
 		menuBtn.classList.toggle('active')

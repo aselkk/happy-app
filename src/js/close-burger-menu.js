@@ -1,7 +1,7 @@
 export const renderCloseBurgerMenu = () => {
 
-    let menuBtn = document.querySelector('.menu-btn')
-    let menu = document.querySelector('.navbar')
+    const menuBtn = document.querySelector('.menu-btn')
+    const menu = document.querySelector('.navbar')
     const links = document.querySelectorAll('.menu__link')
     
     links.forEach(link => link.addEventListener('click', () => {
@@ -9,4 +9,4 @@ export const renderCloseBurgerMenu = () => {
         menu.classList.remove('active');
     }))
 
-    }
+}
