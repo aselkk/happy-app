@@ -4,7 +4,7 @@
 }
 
 .advantages-section__second{
-padding: 99px 0 0 0;
+    padding: 99px 0 0 0;
 }
 
 .advantages-block {
@@ -28,7 +28,7 @@ padding: 99px 0 0 0;
 .advantages-section__text {
     height: 290px;
     max-width: 420px;
-    margin-bottom: 95px;
+    margin-bottom: 73px;
 }
 
 .section-heading__advantages {

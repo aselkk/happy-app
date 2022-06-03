@@ -32,6 +32,6 @@ function showModalWindow (buttonEl) {
 }
 
 function hideModalWindow () {
-    document.body.style.overflow='scroll'
+    document.body.style.overflow='unset'
     document.querySelector(".modal-window").style.display='none'
 }

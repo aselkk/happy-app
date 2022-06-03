@@ -2,8 +2,8 @@ export const renderPlans = () => {
 
     async function getPlans() {
         const response = await fetch('../config.json')
-        const plans = await response.json()
-        const [standart, premium, lifetime] = plans.plans
+        const data = await response.json()
+        const [standart, premium, lifetime] = data.plans
 
         async function setPlan({ name, price, payment }) {
             document.querySelector(`.card-item__plan__${name}`).innerText = name

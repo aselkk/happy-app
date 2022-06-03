@@ -26,20 +26,24 @@ export const renderCountdown = () => {
             const minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((gap % (1000 * 60)) / 1000);
         
-            document.querySelector('.countdown-nums__days').innerText = days;
-            document.querySelector('.countdown-nums__hours').innerText = hours;
-            document.querySelector('.countdown-nums__minutes').innerText = minutes;
-            document.querySelector('.countdown-nums__seconds').innerText = seconds;
-        
+            function padZero(n) {
+                return String(n).padStart(2, '0')
+            }    
+
+            document.querySelector('.countdown-nums__days').innerText = padZero(days);
+            document.querySelector('.countdown-nums__hours').innerText = padZero(hours);
+            document.querySelector('.countdown-nums__minutes').innerText = padZero(minutes);
+            document.querySelector('.countdown-nums__seconds').innerText = padZero(seconds);
+
             if (gap < 0) {
                 clearInterval(x);
             }
-        
+
             }, passedDate)
         }, 1000);
-        
+    
         function passedDate() {
-            alert('Provided date is passed!')
+            document.getElementById('countdown-section').style.display = "none";
         }
 
 }
