@@ -8,12 +8,13 @@ import { renderValidation } from "./js/validation.js";
 import { renderLink } from "./js/get-link.js";
 import { initModalToggling } from "./js/modal-window.js";
 import { renderCloseBurgerMenu } from "./js/close-burger-menu.js";
-renderBurgerMenu()
-renderCloseBurgerMenu()
-renderCountdown()
-renderDarkMode()
-renderTestimonials()
-renderValidation()
-renderPlans()
-renderLink()
-initModalToggling()
+
+renderBurgerMenu();
+renderCloseBurgerMenu();
+renderCountdown();
+renderDarkMode();
+renderTestimonials();
+renderValidation();
+renderPlans();
+renderLink();
+initModalToggling();

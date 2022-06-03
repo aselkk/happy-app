@@ -10,12 +10,10 @@ export const renderPlans = () => {
             document.querySelector(`.card-item__price__${name}`).innerText = `$${price}`
             document.querySelector(`.card-item__payment__${name}`).innerText = payment
         }
-
+        
         setPlan(standart)
         setPlan(premium)
         setPlan(lifetime)
-
     }
-
     getPlans()
 }
