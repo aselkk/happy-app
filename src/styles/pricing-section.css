@@ -21,7 +21,7 @@
     text-transform: capitalize;
 }
 
-.pricing-section__pricing_cards__card-item{
+.pricing-section__card-item{
     display: flex;
     align-items:center;
     background-color: #F2F2F2;
@@ -33,7 +33,7 @@
     line-height: 64px;
 }
 
-.card-item__plan-type{
+.card-item__plan{
     font-size:18px;
     font-weight:400;
 }
@@ -65,15 +65,15 @@
     margin-top: 20px;
 }
 
-.pricing-section__pricing_cards__card-item__standart{
+.pricing-section__card-item__standart{
     color: #0278ED;
 }
 
-.pricing-section__pricing_cards__card-item__premium{
+.pricing-section__card-item__premium{
     color: #FF5437;
 }    
 
-.pricing-section__pricing_cards__card-item__lifetime{
+.pricing-section__card-item__lifetime{
     color: #FF9209;
 }    
 
@@ -111,19 +111,18 @@
     .card-item__btn{
         padding: 8px 21px;
     }
-    .card-item__plan-type{
+    .card-item__plan{
         font-size:15px;
     }
     .card-item__price{
         font-size:40px;
     }
-    .pricing-section__pricing_cards__card-item{
+    .pricing-section__card-item{
         width: 14rem;
         height: 13rem;
         padding: 23px 0;
         line-height: 27px;
     }
-    
 }
 
 @media (max-width:425px) {

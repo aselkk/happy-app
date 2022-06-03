@@ -6,9 +6,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 87px;
-    padding-bottom: 97px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
+
 .section-text__features {
     color: white;
 }
@@ -28,9 +29,9 @@
     background-color: #fff;
     border-radius:20px;
     width: 23.688rem;
-    height: 30.625rem;
+    height: 490px;
     flex-direction: column;
-    padding-top:39px;
+    /* padding-top: 35px; */
 }
 .section-titles{
     font-family: 'Poppins';
@@ -47,7 +48,7 @@
     height: 253px; 
     object-fit: cover;
     object-position: 100% 0;
-    transform: translateY(6px);
+    transform: translateY(32px);
 }
 
 .feature-card__info{
@@ -56,7 +57,8 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 33px 47px;
+    margin-top: 25px;
+    padding: 50px 40px 26px;    
     position: relative;
     background-color: #F2F2F2;
     border-radius: 20px;

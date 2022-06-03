@@ -13,7 +13,7 @@ padding: 99px 0 0 0;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    padding: 0 100px 0 78px;
+    padding: 0 117px 14px 93px;
 }
 
 .advantages-block__second {
@@ -22,13 +22,13 @@ padding: 99px 0 0 0;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    padding: 0 100px 0 78px;
+    padding: 0px 94px 0px 114px;
 }
 
 .advantages-section__text {
     height: 290px;
     max-width: 420px;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 }
 
 .section-heading__advantages {
@@ -75,6 +75,7 @@ padding: 99px 0 0 0;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+
     }
 }
 

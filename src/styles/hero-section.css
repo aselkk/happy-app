@@ -1,15 +1,14 @@
 .hero-section {
     width: 100%;
-    padding-top: 84px;
+    padding-top: 82px;
 }
 .hero-block {
     max-width: 1200px;
     margin: auto;
-    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 0 78px;
+    padding: 0px 115px 0px 91px;
 }
 .hero-section__img {
     width: 23.5rem;
@@ -88,6 +87,19 @@
 }
 
 
+@media (max-width:1121px) {
+    .hero-section__text{
+        margin-bottom: 0px;
+    }
+    .hero-section__bttns{
+        display: flex;
+    }
+    .hero-block {
+        padding: 0;
+    }
+
+    }
+
 @media (max-width:1195px) {
     .hero-section {
         padding: 55px 100px 0px;
@@ -128,7 +140,6 @@
     .hero-section__img {
         width: 19.5rem;
         height: 454px;
-        margin-bottom: 8px; 
     }
 
     .hero-section__logo {

@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.css";
 import { renderBurgerMenu } from "./js/burger-menu.js";
 renderBurgerMenu()
 import { renderCountdown } from "./js/countdown-section.js";
@@ -12,8 +12,8 @@ renderTestimonials()
 import { renderValidation } from "./js/validation.js";
 renderValidation()
 import { renderLink } from "./js/get-link.js";
-import { initModalToggling } from "./js/modal-window.js";
-import { renderCloseBurgerMenu } from "./js/close-burger-menu.js";
 renderLink()
+import { initModalToggling } from "./js/modal-window.js";
 initModalToggling()
+import { renderCloseBurgerMenu } from "./js/close-burger-menu.js";
 renderCloseBurgerMenu()

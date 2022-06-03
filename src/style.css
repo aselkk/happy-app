@@ -67,7 +67,8 @@ body{
 .section-text{
     text-align: center;
     width: 50%;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
+    padding-top: 4px;
 }
 
 

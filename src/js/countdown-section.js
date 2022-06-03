@@ -1,38 +1,46 @@
 export const renderCountdown = () => { 
 
-    const section = document.querySelector('.countdown-section')
-    async function getCountdown() {
-    const response = await fetch('../config.json')
-    const countdown = await response.json()
-    let date = new Date(countdown.timerEndDate).getTime()
-    const currentDate = new Date().getTime()
-    let gap = date - currentDate
-    
-    const second = 1000
-    const minute = second * 60
-    const hour = minute * 60
-    const day = hour * 24
-    
-    const textDay = Math.floor(gap/day)
-    const textHour = Math.floor((gap % day) / hour)
-    const textMinute = Math.floor((gap % hour) / minute)
-    const textSecond = Math.floor((gap % minute) / second)
-    
-    function padZero(n) {
-        return String(n).padStart(2, '0')
-    }
-    document.querySelector('.countdown-nums__days').innerText = padZero(textDay)
-    document.querySelector('.countdown-nums__hours').innerText = padZero(textHour)
-    document.querySelector('.countdown-nums__minutes').innerText = padZero(textMinute)
-    document.querySelector('.countdown-nums__seconds').innerText = padZero(textSecond)
-
-    if(gap <= 1000) {
-        clearInterval(interval);
-        document.getElementById('countdown-section').style.display = "none";
-    }
-}
-getCountdown()
-let interval = setInterval(getCountdown, 1000);
+    function fetchData() {
+        return new Promise(async (resolve, reject) => {
+            const data = await fetch('../config.json');
+            const response = await data.json();
+        
+            const countDownDate = new Date(response.timerEndDate).getTime();
+            const now = new Date().getTime();
+        
+            if (countDownDate > now) {
+                const gap = countDownDate - now;
+                resolve(gap);
+                return
+            }
+        
+            reject()
+            })
+        }
+        
+        const x = setInterval(function() {
+            fetchData().then((gap) => {
+        
+            const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((gap % (1000 * 60)) / 1000);
+        
+            document.querySelector('.countdown-nums__days').innerText = days;
+            document.querySelector('.countdown-nums__hours').innerText = hours;
+            document.querySelector('.countdown-nums__minutes').innerText = minutes;
+            document.querySelector('.countdown-nums__seconds').innerText = seconds;
+        
+            if (gap < 0) {
+                clearInterval(x);
+            }
+        
+            }, passedDate)
+        }, 1000);
+        
+        function passedDate() {
+            alert('Provided date is passed!')
+        }
 
 }
 

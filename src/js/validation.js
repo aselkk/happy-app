@@ -3,14 +3,14 @@ export const renderValidation = () => {
   document.getElementById("name").addEventListener('input', function(e){
     if (e.target.value.length >= 3) {
         document.querySelector(".name-input-error").innerHTML=''
-        document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #f2f2f2')
+        document.querySelector(".name-modal-input").style = 'background: #f2f2f2'
     }
   })
   
   document.getElementById("mail").addEventListener('input', function(e){
     if (e.target.value.length >= 3) {
         document.querySelector(".mail-input-error").innerHTML=''
-        document.querySelectorAll('.modal-input').forEach(input => input.style = 'background: #F2F2F2')
+        document.querySelector(".mail-modal-input").style = 'background: #F2F2F2'
     }
   })
   
