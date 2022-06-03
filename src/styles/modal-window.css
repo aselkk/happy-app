@@ -11,7 +11,7 @@
     height: 100%; 
     background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-form{
+.modal-window__modal-form{
     margin-top: 20rem; 
     margin-bottom: 5rem; 
     position: relative; 

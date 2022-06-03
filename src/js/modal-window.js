@@ -17,7 +17,7 @@ document.querySelector('.modal-window').addEventListener(
 	function (event) {
 		if (
 			event.target.matches(".button-close-modal") ||
-			!event.target.closest(".modal-form")
+			!event.target.closest(".modal-window__modal-form")
 		) {
 			hideModalWindow();
 		}
