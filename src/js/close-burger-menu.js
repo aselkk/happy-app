@@ -6,5 +6,4 @@ export const renderCloseBurgerMenu = () => {
         menuBtn.classList.remove('active');
         menu.classList.remove('active');
     }))
-    console.log('123');
     }
