@@ -1,10 +1,11 @@
-.statistics-section{
+.statistics-section {
     width: 100%;
     background-color:#FF5437;
     color: #fff;
     padding: 58px 0px 98px;
 }
-.statistics-block{
+
+.statistics-block {
     margin: auto;
     padding: 0 109px 0px 78px;
     max-width: 1200px;
@@ -12,16 +13,17 @@
     align-items: center;
     justify-content: space-between;
 }
-.statistics-section__item{
+
+.statistics-section__item {
     text-align: center;
 }
 
-.statistics-number{
+.statistics-number {
     font-size: 96px;
     font-weight:400;
 }
 
-.statisctics-caption{
+.statisctics-caption {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -34,13 +36,14 @@
     .statistics-number {
         font-size: 78px;
     }
-    .statisctics-caption{
+    
+    .statisctics-caption {
         font-size: 11px;
     }
 }
 @media (max-width:667px) {
 
-    .statistics-block{
+    .statistics-block {
         margin: auto;
         padding: 0 10px 0 10px;
         max-width: 1200px;

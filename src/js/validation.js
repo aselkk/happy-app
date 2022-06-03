@@ -2,15 +2,15 @@ export const renderValidation = () => {
 
     document.getElementById("name").addEventListener('input', function (e) {
         if (e.target.value.length >= 3) {
-            document.querySelector(".name-input-error").innerHTML = ''
-            document.querySelector(".name-modal-input").style = 'background: #f2f2f2'
+            document.querySelector(".name-input-error").innerHTML = '';
+            document.querySelector(".name-modal-input").style = 'background: #f2f2f2';
         }
     })
 
     document.getElementById("mail").addEventListener('input', function (e) {
         if (e.target.value.length >= 3) {
-            document.querySelector(".mail-input-error").innerHTML = ''
-            document.querySelector(".mail-modal-input").style = 'background: #F2F2F2'
+            document.querySelector(".mail-input-error").innerHTML = '';
+            document.querySelector(".mail-modal-input").style = 'background: #F2F2F2';
         }
     })
 
@@ -18,7 +18,7 @@ export const renderValidation = () => {
     checkboxes.forEach((el) => {
         el.addEventListener('change', function (e) {
             if (e.target.checked && document.querySelector(".checkbox-error").innerHTML !== '') {
-                document.querySelector(".checkbox-error").innerHTML = ''
+                document.querySelector(".checkbox-error").innerHTML = '';
             }
         })
     })
@@ -36,7 +36,7 @@ export const renderValidation = () => {
         const isEmailFieldValid = validateFields(mail, 'mail');
 
         if (!checkboxes.length) {
-            document.querySelector(".checkbox-error").innerHTML = 'please choose one option*'
+            document.querySelector(".checkbox-error").innerHTML = 'please choose one option*';
         }
 
         if (isNameFieldValid && isEmailFieldValid && checkboxes.length) {
@@ -49,17 +49,17 @@ export const renderValidation = () => {
         const doesFieldHasThreeCharacters = field.length < 3 && field.length > 1;
 
         if (!isFieldEmpty) {
-            document.querySelector(`.${fieldName}-input-error`).innerHTML = 'this field is required*'
-            document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE; border: 1px solid #ff5437'
+            document.querySelector(`.${fieldName}-input-error`).innerHTML = 'this field is required*';
+            document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE; border: 1px solid #ff5437';
 
         }
 
         if (doesFieldHasThreeCharacters) {
-            document.querySelector(`.${fieldName}-input-error`).innerHTML = 'please enter three or more characters*'
-            document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE; border: 1px solid #ff5437'
+            document.querySelector(`.${fieldName}-input-error`).innerHTML = 'please enter three or more characters*';
+            document.querySelector(`.${fieldName}-modal-input`).style = 'background: #FFEEEE; border: 1px solid #ff5437';
         }
 
-        return isFieldEmpty && !doesFieldHasThreeCharacters
+        return isFieldEmpty && !doesFieldHasThreeCharacters;
     }
 
     function submitData() {
@@ -74,16 +74,15 @@ export const renderValidation = () => {
         }
 
         setTimeout(() => {
-            document.querySelector('.modal-btn').removeAttribute('disabled')
-            document.querySelector('.loader-wrapper').style = 'display: none'
+            document.querySelector('.modal-btn').removeAttribute('disabled');
+            document.querySelector('.loader-wrapper').style = 'display: none';
 
-            document.getElementById('name').value = ''
-            document.getElementById('mail').value = ''
-            checkboxes.forEach(e => e.checked = false)
+            document.getElementById('name').value = '';
+            document.getElementById('mail').value = '';
+            checkboxes.forEach(e => e.checked = false);
 
-            document.querySelector(".modal-window").style = 'display: none'
+            document.querySelector(".modal-window").style = 'display: none';
             console.log(values);
-        }, 2000)
-    }
-
-}
+        }, 2000);
+    };
+};

@@ -121,8 +121,7 @@
     }
 }
 
-@media (max-width:400px
-) {
+@media (max-width:400px) {
     .darkmode-section__line {
         border: 2px solid #E5E5E5;
         width: 95%;

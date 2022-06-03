@@ -1,5 +1,5 @@
 
-.features-section{
+.features-section {
     background-color: #222;
     color:#fff;
     display: flex;
@@ -14,7 +14,7 @@
     color: white;
 }
 
-.features-section__features-container{    
+.features-section__features-container {    
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
     justify-content: center;
 }
 
-.feature-card{
+.feature-card {
     display: flex;
     justify-content: center;
     align-items:center;
@@ -31,9 +31,9 @@
     width: 23.688rem;
     height: 490px;
     flex-direction: column;
-    /* padding-top: 35px; */
 }
-.section-titles{
+
+.section-titles {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -43,7 +43,8 @@
     text-transform: uppercase;
     color: #ffffff;
 }
-.feature-card__img{
+
+.feature-card__img {
     width: 227px;
     height: 253px; 
     object-fit: cover;
@@ -51,7 +52,7 @@
     transform: translateY(32px);
 }
 
-.feature-card__info{
+.feature-card__info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,37 +65,42 @@
     border-radius: 20px;
 }
 
-.feature-card__title{
+.feature-card__title {
     font-size: 24px;
     font-weight: 300;
 }
-.feature-card__title__calendar-view{
+
+.feature-card__title__calendar-view {
     color:#0278ED;
 }
-.feature-card__title__lists{
+
+.feature-card__title__lists {
     color: #FF5437;
 }
-.feature-card__title__varied-type{
+
+.feature-card__title__varied-type {
     color: #FF9209;
 }
-.feature-card__title__split-screen{
+
+.feature-card__title__split-screen {
     color: #E738CE;
 }
-.feature-card__title__uploads{
+
+.feature-card__title__uploads {
     color: #00C6DF;
 }
-.feature-card__title__focus-mode{
+
+.feature-card__title__focus-mode {
     color: #B25DF8;
 }
 
-.feature-card__heading{
+.feature-card__heading {
     color:#222;
     font-weight: 400;
     line-height: 22.54px;
-
 }
 
-.feature-card__icon{
+.feature-card__icon {
     position: absolute;
     top: -35px;
     z-index: 50
@@ -105,21 +111,23 @@
     .section-title {
         font-size: 13px;
     }
+    
     .section-heading {
         font-size: 25px;
     }
-    .feature-card{
+    
+    .feature-card {
         width: 18.688rem;
         height: 28.625rem;
         padding-top:15px;
     }
-    .features-section{
+    
+    .features-section {
         padding: 6.25rem 10px;
     }
 }
 
 @media (max-width:425px) {
-
     .section-text{
         width: 100% !important; 
     }

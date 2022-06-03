@@ -1,4 +1,4 @@
-.countdown-section{
+.countdown-section {
     background: url(../assets/img/background.png) no-repeat;
     background-size: cover; 
     padding: 60px 0 78px 0;
@@ -9,10 +9,12 @@
     text-align: center;
     flex-direction: column;
 }
+
 .countdown-block {
     max-width: 729px;
     height: 298px;
 }
+
 .countdown-section__header-top  {
     font-family: 'Poppins';
     font-style: normal;
@@ -84,6 +86,7 @@
     .countdown-section__header-top {
         font-size: 47px;
     }
+
     .countdown-section__header-bottom {
         font-size: 29px;
     }    
@@ -93,9 +96,11 @@
     .countdown-section__header-top {
         font-size: 40px;
     }
+
     .countdown-section__header-bottom {
         font-size: 25px;
-    }    
+    }
+
     .countdown-nums {
         font-size: 87px;
         width: 100px;
@@ -106,16 +111,16 @@
     .countdown-section__header-top {
         font-size: 35px;
     }
+
     .countdown-section__header-bottom {
         font-size: 20px;
-    }    
+    }
+
     .countdown-nums {
         font-size: 10px;
         width: 100px;
     }
-    /* section {
-        padding: 5.25rem 9.5rem !important;
-    } */
+
     .dividor {
         height: 69px;
         width: 6px;
@@ -124,31 +129,31 @@
 
 
 @media (max-width:768px) {
-    /* section{ 
-        padding: 4.25rem 4.5rem !important; 
-    }  */
     .section-heading{
         width: unset;
     }
+
     .dividor {
         height: 69px;
         width: 6px;
         transform: translateY(-15px);
     }
+
     .countdown-nums {
         font-size: 73px;
         width: 83px;
     }
+
     .countdown-text{
         font-size: 20px;
-    }    
+    }   
+
     .countdown-section__countdown-container{
         display: flex;
         gap:15px;
         align-items: center;
         justify-content: center;
     }
-    
 }
 
 
@@ -156,6 +161,7 @@
     .countdown-section__header-top {
         font-size: 33px;
     }
+
     .countdown-section__header-bottom {
         font-size: 15px;
     }     
@@ -168,10 +174,12 @@
         width: 55px;
         line-height: 110px;
     }
+
     .countdown-text{
         font-size: 13px;
         margin-left: 3px;
-    }  
+    }
+    
     .dividor {
         margin-left: 10px;
         height: 51px;
@@ -181,20 +189,20 @@
 }
 
 @media (max-width:375px) {
-    .countdown-section__countdown-container
-
-    {gap: 20px;
+    .countdown-section__countdown-container{
+        gap: 20px;
     }
-
 
     .countdown-nums {
         font-size: 51px;
         line-height: 79px;
     }
+
     .countdown-text{
         font-size: 12px;
         margin-left: 13px;
-    }  
+    }
+    
     .dividor {
         display:none;
     }

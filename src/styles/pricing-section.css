@@ -1,4 +1,4 @@
-.pricing-section{
+.pricing-section {
     width: 100%;
     padding: 100px 0;
     display: flex;
@@ -7,12 +7,12 @@
     text-align: center;
 }   
 
-.pricing-section__section-text{
+.pricing-section__section-text {
     max-width: 568px;
     margin-bottom:41px;
 }
 
-.pricing-section__pricing_cards{
+.pricing-section__pricing_cards {
     max-width: 1200px;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
     text-transform: capitalize;
 }
 
-.pricing-section__card-item{
+.pricing-section__card-item {
     display: flex;
     align-items:center;
     background-color: #F2F2F2;
@@ -33,24 +33,24 @@
     line-height: 64px;
 }
 
-.card-item__plan{
+.card-item__plan {
     font-size:18px;
     font-weight:400;
 }
 
-.card-item__price{
+.card-item__price {
     font-size:108px;
     letter-spacing: 8px;
 }
 
-.card-item__payment{
+.card-item__payment {
     font-size:14px;
     letter-spacing: 2px;
     color:#222;
     text-transform: uppercase;
 }
 
-.card-item__btn{
+.card-item__btn {
     font-size:14px;
     letter-spacing: 2px;
     padding: 10px 25px;
@@ -61,63 +61,68 @@
     cursor: pointer;
 }
 
-.card-item__payment{
+.card-item__payment {
     margin-top: 20px;
 }
 
-.pricing-section__card-item__standart{
+.pricing-section__card-item__standart {
     color: #0278ED;
 }
 
-.pricing-section__card-item__premium{
+.pricing-section__card-item__premium {
     color: #FF5437;
 }    
 
-.pricing-section__card-item__lifetime{
+.pricing-section__card-item__lifetime {
     color: #FF9209;
 }    
 
-.card-item__btn__standart{
+.card-item__btn__standart {
     background-color: #0278ED;
 }
 
-.card-item__btn__standart:hover{
+.card-item__btn__standart:hover {
     background-color: #0278edbd;
 }
 
-.card-item__btn__premium{
+.card-item__btn__premium {
     background-color: #FF5437;
 }
 
-.card-item__btn__premium:hover{
+.card-item__btn__premium:hover {
     background-color: #ff5437cc;
 }
 
-.card-item__btn__lifetime{
+.card-item__btn__lifetime {
     background-color: #FF9209;
 }
 
-.card-item__btn__lifetime:hover{
+.card-item__btn__lifetime:hover {
     background-color: #ff9209c9;
 }
 
 @media (max-width:768px) {
-    .pricing-section{
+    .pricing-section {
         padding: 100px 10px;
     }
-    .pricing-section__section-text{
+    
+    .pricing-section__section-text {
         margin-bottom: 56px;
     }
-    .card-item__btn{
+    
+    .card-item__btn {
         padding: 8px 21px;
     }
-    .card-item__plan{
+    
+    .card-item__plan {
         font-size:15px;
     }
-    .card-item__price{
+    
+    .card-item__price {
         font-size:40px;
     }
-    .pricing-section__card-item{
+    
+    .pricing-section__card-item {
         width: 14rem;
         height: 13rem;
         padding: 23px 0;
@@ -127,7 +132,7 @@
 
 @media (max-width:425px) {
 
-    .pricing-section__section-text{
+    .pricing-section__section-text {
         width: 100%;
     }
 
