@@ -25,10 +25,8 @@ document.querySelector('.modal-window').addEventListener(
 	false 
 );
 
-
 function showModalWindow (buttonEl) {
     document.body.style.overflow='hidden'
-
     document.querySelector(".modal-window").style.display='flex'
     document.getElementById(`option-${buttonEl.id}`).checked = true;
 }
@@ -36,5 +34,4 @@ function showModalWindow (buttonEl) {
 function hideModalWindow () {
     document.body.style.overflow='scroll'
     document.querySelector(".modal-window").style.display='none'
-    
 }

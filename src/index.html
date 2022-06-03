@@ -30,80 +30,6 @@
             </ul>
         </nav>
 
-        <div id="modal-window" class="modal-window">
-            <form class="modal-window__modal-form" id="modal-form-id" name="modal-form">
-
-                <h2 class="modal-header">Leave a request for the purchase of goods</h2>
-
-                <button class="modal-exit-btn  modal-hide-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z"
-                            fill="#222222" />
-                    </svg>
-                </button>
-
-                <input class="modal-input name-modal-input" name="user-name" type="text" placeholder="name" id="name">
-                <span class="error-text name-input-error"></span>
-                <input class="modal-input mail-modal-input" name="user-mail" type="email" placeholder="email" id='mail'>
-                <span class="error-text mail-input-error"></span>
-
-                <p class="modal-text modal-text__plan">Your plan?</p>
-
-                <div class="modal-window__radio-wrapper">
-                    <input class='modal-radio-buttons' type="radio" value="standart" name="select" id="option-standart">
-                    <input class='modal-radio-buttons' type="radio" value="premium" name="select" id="option-premium">
-                    <input class='modal-radio-buttons' type="radio" value="lifetime" name="select" id="option-lifetime" checked>
-                    <label for="option-standart" class="option option-1">
-                        <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
-                        <span class='option__standart'>Standart</span>
-                    </label>
-                    <label for="option-premium" class="option option-2">
-                        <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
-                        <span class="option__premium">Premium</span>
-                    </label>
-                    <label for="option-lifetime" class="option option-3">
-                        <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
-                        <span class="option__lifetime">Lifetime</span>
-                    </label>
-                </div>
-
-                <p class="modal-text modal-text__sm">How did you know about our app?</p>
-
-                <div class="modal-window__checkbox-wrapper">
-
-                    <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="facebook">
-                        <span>Facebook</span>
-                    </label>
-                    <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="instagram">
-                        <span>Instagram</span>
-                    </label>
-                    <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="youtube">
-                        <span>Youtube</span>
-                    </label>
-                    <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="other">
-                        <span>Other</span>
-                    </label>
-
-                    <span class="checkbox-error error-text"></span>
-
-                </div>
-
-                <button type="submit" name="submit" class="modal-btn">send</button>
-
-                <div class="loader-wrapper">
-                    <div class="modal-window__loading-text">
-                        <img class="loading-icon" src="./assets/icons/loading-icon.svg" alt="" />
-                        loading...
-                    </div>
-                </div>
-            </form>
-        </div>
-
     </header>
 
     <!-- countdown section -->
@@ -464,7 +390,79 @@
 
     </section>
 
+    <div id="modal-window" class="modal-window">
+        <form class="modal-window__modal-form" id="modal-form-id" name="modal-form">
 
+            <h2 class="modal-header">Leave a request for the purchase of goods</h2>
+
+            <button class="modal-exit-btn  modal-hide-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z"
+                        fill="#222222" />
+                </svg>
+            </button>
+
+            <input class="modal-input name-modal-input" name="user-name" type="text" placeholder="name" id="name">
+            <span class="error-text name-input-error"></span>
+            <input class="modal-input mail-modal-input" name="user-mail" type="email" placeholder="email" id='mail'>
+            <span class="error-text mail-input-error"></span>
+
+            <p class="modal-text modal-text__plan">Your plan?</p>
+
+            <div class="modal-window__radio-wrapper">
+                <input class='modal-radio-buttons' type="radio" value="standart" name="select" id="option-standart">
+                <input class='modal-radio-buttons' type="radio" value="premium" name="select" id="option-premium">
+                <input class='modal-radio-buttons' type="radio" value="lifetime" name="select" id="option-lifetime" checked>
+                <label for="option-standart" class="option option-1">
+                    <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
+                    <span class='option__standart'>Standart</span>
+                </label>
+                <label for="option-premium" class="option option-2">
+                    <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
+                    <span class="option__premium">Premium</span>
+                </label>
+                <label for="option-lifetime" class="option option-3">
+                    <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
+                    <span class="option__lifetime">Lifetime</span>
+                </label>
+            </div>
+
+            <p class="modal-text modal-text__sm">How did you know about our app?</p>
+
+            <div class="modal-window__checkbox-wrapper">
+
+                <label class="custom-checkbox">
+                    <input class="checkbox-social" name='social-media-cb' type="checkbox" value="facebook">
+                    <span>Facebook</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input class="checkbox-social" name='social-media-cb' type="checkbox" value="instagram">
+                    <span>Instagram</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input class="checkbox-social" name='social-media-cb' type="checkbox" value="youtube">
+                    <span>Youtube</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input class="checkbox-social" name='social-media-cb' type="checkbox" value="other">
+                    <span>Other</span>
+                </label>
+
+                <span class="checkbox-error error-text"></span>
+
+            </div>
+
+            <button type="submit" name="submit" class="modal-btn">send</button>
+
+            <div class="loader-wrapper">
+                <div class="modal-window__loading-text">
+                    <img class="loading-icon" src="./assets/icons/loading-icon.svg" alt="" />
+                    loading...
+                </div>
+            </div>
+        </form>
+    </div>
 
     <footer class="footer">
         <img class="footer__logo" src="./assets/icons/logo-footer.svg" alt="logo">

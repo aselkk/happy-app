@@ -68,7 +68,7 @@ margin-right: 12px;
 }
 
 .countdown-text{
-    font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -77,7 +77,7 @@ text-align: center;
 letter-spacing: 1.5px;
 color: #FFFFFF;
 margin-top: -13px;
-    margin-left: -31px;
+margin-left: -10px;
 
 }
 
@@ -171,9 +171,11 @@ margin-top: -13px;
     .countdown-nums {
         font-size: 58px;
         width: 55px;
+        line-height: 110px;
     }
     .countdown-text{
         font-size: 13px;
+        margin-left: 3px;
     }  
     .dividor {
         margin-left: 10px;
