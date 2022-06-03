@@ -1,6 +1,6 @@
 .hero-section {
     width: 100%;
-    padding-top: 93px;
+    padding-top: 84px;
 }
 .hero-block {
     max-width: 1200px;
@@ -144,12 +144,6 @@
         justify-content: center;
         width: 100%;
     }
-
-    /* .hero-section__img-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    } */
 }
 
 @media (max-width:600px) {
@@ -163,7 +157,6 @@
     .hero-section__img {
         width: 19.5rem;
         height: 454px;
-      
     }
     .hero-block {
         max-width: 1200px;

@@ -60,6 +60,8 @@ body{
 .section-heading{
     font-size: 32px;
     font-weight: 400;
+    width: 500px;
+    margin: 0px auto;
 }
 
 .section-text{
@@ -75,25 +77,27 @@ body{
 }
 
 
-
-/* media queries */
 @media (max-width:1195px) {
     body{
         font-size: 87%;
     }
-    
-
-
 }
 
 @media (max-width:956px) {
     body{
         font-size: 87%;
     }
+    .section-heading{
+        width: unset;
+    }
 }
 
-@media (max-width:400px) {
+@media (max-width:425px) {
     body{
         font-size: 70%;
+    }
+
+    .section-heading{
+        width: unset;
     }
 }

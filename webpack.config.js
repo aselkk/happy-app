@@ -25,7 +25,7 @@ const dev = {
         },
         hot: true,
         open: true,
-        port: 5002,
+        port: 5003,
     },
     plugins: [
         new HtmlWebpackPlugin({

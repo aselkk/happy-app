@@ -3,7 +3,7 @@
 }
 
 .darkmode-section {
-    padding: 100px 0;
+    padding: 116px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,8 @@
 
 .darkmode-section__line {
     border: 2px solid #E5E5E5;
-    width: 50%;
+    width: 32%;
+    background-color: #E5E5E5;
 }
 
 .darkmode-section__btn-container {
@@ -34,6 +35,13 @@
     background: none;
 }
 
+.section-paragraph__darkmode{
+    color: #666;
+    font-weight: 300;
+    width: 50% !important;
+    /* margin-top: 27px; */
+    margin: 20px auto 0 auto;
+}
 
 .darkmode-section__toggle-bttns {
     display: flex;

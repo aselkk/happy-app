@@ -1,7 +1,7 @@
 export const renderCountdown = () => { 
+
     const section = document.querySelector('.countdown-section')
     async function getCountdown() {
-        debugger
     const response = await fetch('../config.json')
     const countdown = await response.json()
     let date = new Date(countdown.timerEndDate).getTime()
@@ -21,7 +21,6 @@ export const renderCountdown = () => {
     function padZero(n) {
         return String(n).padStart(2, '0')
     }
-    console.log('sad')
     document.querySelector('.countdown-nums__days').innerText = padZero(textDay)
     document.querySelector('.countdown-nums__hours').innerText = padZero(textHour)
     document.querySelector('.countdown-nums__minutes').innerText = padZero(textMinute)

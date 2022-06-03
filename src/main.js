@@ -17,4 +17,3 @@ import { renderCloseBurgerMenu } from "./js/close-burger-menu.js";
 renderLink()
 initModalToggling()
 renderCloseBurgerMenu()
-console.log('sad2222')

@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,7 @@
             <span></span>
         </div>
         <nav class="navbar">
-            <a href="#"><img src="./assets/icons/logo-header.svg" alt="header-logo"></a>
+            <a class="header__logo" href="#"><img src="./assets/icons/logo-header.svg" alt="header-logo"></a>
             <ul class="menu">
                 <li><a class="menu__link" href="#features">Features</a></li>
                 <li><a class="menu__link" href="#pricing">Pricing</a></li>
@@ -51,9 +51,9 @@
                 <p class="modal-text modal-text__plan">Your plan?</p>
 
                 <div class="modal-window__radio-wrapper">
-                    <input class='modal-radio-buttons' type="radio" name="select" id="option-standart">
-                    <input class='modal-radio-buttons' type="radio" name="select" id="option-premium">
-                    <input class='modal-radio-buttons' type="radio" name="select" id="option-lifetime" checked>
+                    <input class='modal-radio-buttons' type="radio" value="standart" name="select" id="option-standart">
+                    <input class='modal-radio-buttons' type="radio" value="premium" name="select" id="option-premium">
+                    <input class='modal-radio-buttons' type="radio" value="lifetime" name="select" id="option-lifetime" checked>
                     <label for="option-standart" class="option option-1">
                         <img class="options__check-icon" src="./assets/icons/check-icon.svg" alt="check-icon">
                         <span class='option__standart'>Standart</span>
@@ -73,19 +73,19 @@
                 <div class="modal-window__checkbox-wrapper">
 
                     <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-1">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="facebook">
                         <span>Facebook</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-2">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="instagram">
                         <span>Instagram</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-3">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="youtube">
                         <span>Youtube</span>
                     </label>
                     <label class="custom-checkbox">
-                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="value-4">
+                        <input class="checkbox-social" name='social-media-cb' type="checkbox" value="other">
                         <span>Other</span>
                     </label>
 
@@ -235,7 +235,7 @@
                 </div>
             </div>
 
-  <div class="feature-card">
+    <div class="feature-card">
                 <div>
                     <img class="feature-card__img" src="./assets/img/focus-mode-img.png" alt="card image">
                 </div>
@@ -430,7 +430,7 @@
 
   <div class="faq-block">
             <div class="faq-section__section-text">
-                <h3 class="section-heading">FAQ</h3>
+                <h3 class="section-heading faq-section-heading">FAQ</h3>
                 <p class="section-paragraph">Some questions & some answers</p>
             </div>
             <div class="faq-block__last">

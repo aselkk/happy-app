@@ -273,16 +273,16 @@ input[type="radio"]{
 
 .name-input-error{
     position: absolute;
-    top: 182px;
-    left: 77px;
     color: rgb(228, 32, 32);
     font-size: 12px;
+    top: 198px;
+    left: 92px;
 }
 
 .mail-input-error{
     position: absolute;
-    top: 242px;
-    left: 77px;
+    top: 255px;
+    left: 93px;
     color: rgb(228, 32, 32);
     font-size: 12px;
 }
@@ -292,7 +292,7 @@ input[type="radio"]{
     bottom: 103px;
     color: rgb(228, 32, 32);
     font-size: 12px;
-    right: 162px;
+    right: 174px;
 }
 
 .modal-btn:disabled{
